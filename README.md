@@ -2,9 +2,10 @@
 
 ### **Primer Semestre**
 
-#### Asignatura Fundamentos De Programacion[FPY1101]
+#### Asignatura Fundamentos De Programacion [FPY1101]
 
 - PSeInt
 - Python
 
 Por Gaboemi
+PD: Archivos Fun son basicamente yo aburrido tonteando

@@ -2,6 +2,8 @@ from os import system
 import time
 from MainFunClass import Map
 
+# Juego sin terminar basicamente
+
 ## Functions
 def combat():
 	print("Combat!")

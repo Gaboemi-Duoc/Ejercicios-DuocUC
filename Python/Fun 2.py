@@ -1,8 +1,9 @@
 from os import system
+import keyboard # para instalar en CMD poner: pip install keyboard
+from datetime import timedelta, datetime
 system("cls")
 
-import keyboard
-from datetime import timedelta, datetime
+# tontera de movimiento 3d con listas medio sin terminar
 
 matriz = [
 	[[0,1,2], [3,4,5]],
