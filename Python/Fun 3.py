@@ -1,6 +1,6 @@
 from os import system
 import json
-import requests
+import requests # para instalar en CMD poner: pip install requests
 system("cls")
 
 URL = "https://swapi.dev/"
