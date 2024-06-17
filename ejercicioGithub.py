@@ -1,10 +1,10 @@
-num1 = int(input("numero 1: ")) 
-num2 = int(input("numero 2: "))
-num3 = int(input("numero 3: "))
+num1 = int(input("Numero 1: ")) 
+num2 = int(input("Numero 2: "))
+num3 = int(input("Numero 3: "))
 
 valor = 0
 while True:
-	print("""seleccione opcion
+	print("""Seleccione Opcion
 			1- Sumar 
 			2- Restar
 			3- Multiplicar
@@ -31,4 +31,3 @@ while True:
 		break;
 	else:
 		print("Opcion incorrecta")
-		break;
