@@ -4,7 +4,7 @@
 
 #### Asignatura Fundamentos De Programacion[FPY1101]
 
-- Python
 - PSeInt
+- Python
 
 Por Gaboemi
