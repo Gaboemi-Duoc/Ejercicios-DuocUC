@@ -1,4 +1,10 @@
 # Ejercicios y Clases DuocUC
+
+### **Primer Semestre**
+
 #### Asignatura Fundamentos De Programacion[FPY1101]
-#### Primer Semestre
+
+- Python
+- PSeInt
+
 Por Gaboemi
