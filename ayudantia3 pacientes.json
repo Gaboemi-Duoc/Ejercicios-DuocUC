@@ -1,0 +1,14 @@
+{
+    "21001241-2": {
+        "nombre": "Gabriel",
+        "fechaNac": "12/02/2001",
+        "sexo": "Male",
+        "dolencia": "Cancer"
+    },
+    "32112312-k": {
+        "nombre": "Dario",
+        "fechaNac": "10/05/2003",
+        "sexo": "Male",
+        "dolencia": "TB"
+    }
+}
