@@ -1,0 +1,3 @@
+Nombre, Cargo, Sueldo Bruto, Desc. Salud, Desc. Afp, Liquido a Pagar
+Homero Simpson, CEO, 1000000, 70000, 120000, 810000
+Gabriel Jeria, QA, 100124, 7009, 12015, 81100
