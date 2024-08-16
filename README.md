@@ -10,6 +10,7 @@
 ### **2° Semestre**
 
 - #### Matematicas Aplicadas [MAT2121]
+- #### Desarrollo Orientada a Objetos [DSY1102]
 
 Por Gaboemi<br><br>
 PD: Archivos Fun son basicamente yo aburrido tonteando
