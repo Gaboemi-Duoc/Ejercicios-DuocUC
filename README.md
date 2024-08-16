@@ -4,8 +4,8 @@
 
 - #### Fundamentos De Programacion [FPY1101]
 
-- - PSeInt
-- - Python
+  - PSeInt
+  - Python
 
 ### **2° Semestre**
 
