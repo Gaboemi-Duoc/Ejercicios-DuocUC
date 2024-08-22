@@ -1,0 +1,96 @@
+~ 1:
+person
+#* run			varchar2
+ * name			varchar2
+ o parents		varchar2
+ * birthday		date
+ * job			varchar2
+ * address		varchar2
+ o wage			number
+ o studies		varchar2
+ o email		varchar2
+ o phone		number
+
+~ 2:
+employee
+#* run			varchar2
+ * name			varchar2
+ * company		varchar2
+ * company_department	varchar2 (?
+ * position		varchar2
+ * birthday		date
+ * hire_date		date
+ * salary		number
+ o address		varchar2
+ o phone		number
+
+~ 3:
+company
+#* rut			varchar2
+ * name			varchar2
+ * country		varchar2
+ * employees		varchar2
+ * owner_run		varchar2
+ o parent_company	varchar2
+ * worth		number
+ * gains		number
+ * operating_cost	number
+
+~ 4:
+phone
+#* serial_number	varchar2 or number
+ * model		varchar2
+ * brand		varchar2
+ * owner_run		varchar2
+ * phone_number		number
+ o color		varchar2
+
+~ 5:
+country
+#* country_code		varchar2
+ * name			varchar2
+ * language		varchar2
+ * head_of_state	varchar2
+ * head_of_government	varchar2
+ * legislative_body	varchar2
+ * law_system		varchar2 (civil, common, other)
+ * population		number
+ * currency		varchar2
+ * gdp			number (in dollars)
+ * regions		varchar2
+
+~ 6:
+region
+#* id			number
+ * name			varchar2
+ * country		varchar2
+ * municipalities	varchar2
+ o governor		varchar2
+ * population		number
+
+~ 7:
+municipality
+#* id			number
+ * name			varchar2
+ * country		varchar2
+ * región		varchar2
+ * mayor		varchar2
+ * population		number
+
+~ 8:
+ministery
+#* name			varchar2
+ * minister		varchar2
+ * budget		number
+ * agencies		varchar2
+ * employees		varchar2
+ 
+~ 9:
+school
+#* rut			varchar2
+ * name			varchar2
+ * budget		number
+ * director		varchar2
+ * professors		varchar2
+ * students		varchar2
+ * address		varchar2
