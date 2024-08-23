@@ -2,17 +2,17 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
-package alumnoduoc.projecto;
+package alumnoduoc.clase1;
 import java.util.Scanner;
 
 /**
  * @author Gabo's
  */
 
-public class Projecto {
+public class Clase1 {
 
-    public static void main(String[] args) {
-        System.out.println("Funciona!");
+	public static void main(String[] args) {
+		System.out.println("Funciona!");
 //        String name = "Gabo J";
 //        int age = 22;
 //        double alt = 1.72;
@@ -66,7 +66,7 @@ public class Projecto {
 //                break;
 //        }
 
-        
+		
 //        for(int i=1; i<5; i++){
 //            System.out.println("N = " + i);
 //        }
@@ -80,7 +80,7 @@ public class Projecto {
 //                System.out.println(e + " x " + i + " = " + e*i);
 //            }
 //        }
-        
+		
 //        String[] cars = {"Volvo","Ford"};
 //        for (int i = 0; i < cars.length; i++){
 //            System.out.println(cars[i]);
@@ -94,9 +94,9 @@ public class Projecto {
 //        for (int i = 0; i < nombres.length; i++){
 //            System.out.println("Alumno "+ nombres[i] + " " + apellidos[i]);
 //        }
-        
-        Scanner leer = new Scanner(System.in);
-        
+		
+		Scanner leer = new Scanner(System.in);
+		
 //        System.out.print("Ingrese su Nombre: ");
 //        String name = leer.next();
 //        System.out.println("Su Nombre tiene " + name.length() + " Caracteres...");
@@ -107,7 +107,7 @@ public class Projecto {
 //        }else {
 //            System.out.println("Usted Puede entrar a la Pagina");
 //        }
-        
+		
 //        int intentos = 0;
 //        String passUser = "pass123";
 //        boolean ingreso = false;
@@ -128,51 +128,51 @@ public class Projecto {
 //        }else{
 //            System.out.println("Usted NO Puede entrar a la Pagina");
 //        }
-        
-        int option = 0;
-        while(option != 5) {
-            System.out.println("1. Revisar si es Mayor de Edad");
-            System.out.println("2. Contar los Numeros de Caracteres en su Nombre");
-            System.out.println("3. Obtener la Tabla de N Numero");
-            System.out.println("4. Algo");
-            System.out.println("5. Salir");
-            System.out.print("Ingrese una Opcion: ");
-            option = leer.nextInt();
-            switch (option) {
-                case 1:
-                    System.out.print("Ingrese su Edad: ");
-                    int age = leer.nextInt();
-                    if(age < 18){
-                        System.out.println("Usted NO Puede entrar a la Pagina");
-                    }else {
-                        System.out.println("Usted Puede entrar a la Pagina");
-                    }
-                    break;
-                case 2:
-                    System.out.print("Ingrese su Nombre: ");
-                    String name = leer.next();
-                    System.out.println("Su Nombre tiene " + name.length() + " Caracteres...");
-                    break;
-                case 3:
-                    System.out.print("Ingrese el Numero que desee tener la Tabla: ");
-                    int num = leer.nextInt();
-                    for(int e = 1; e <= 10; e++){
-                        System.out.println(e + " x " + num + " = " + e*num);
-                    }
-                    break;
-                case 4:
-                    System.out.println("Algo dijo usted?");
-                    System.out.print("> ");
-                    leer.next();
-                    System.out.println("Mmmmmh Definitivamente dijo Algo");
-                    System.out.println("Continue con su Vida...");
-                    break;
-                case 5:
-                    System.out.println("Saliendo...");
-                    break;
-                default:
-                    System.out.println("Opcion Invalida...");
-            }
-        }
-    }
+		
+		int option = 0;
+		while(option != 5) {
+			System.out.println("1. Revisar si es Mayor de Edad");
+			System.out.println("2. Contar los Numeros de Caracteres en su Nombre");
+			System.out.println("3. Obtener la Tabla de N Numero");
+			System.out.println("4. Algo");
+			System.out.println("5. Salir");
+			System.out.print("Ingrese una Opcion: ");
+			option = leer.nextInt();
+			switch (option) {
+				case 1:
+					System.out.print("Ingrese su Edad: ");
+					int age = leer.nextInt();
+					if(age < 18){
+						System.out.println("Usted NO Puede entrar a la Pagina");
+					}else {
+						System.out.println("Usted Puede entrar a la Pagina");
+					}
+					break;
+				case 2:
+					System.out.print("Ingrese su Nombre: ");
+					String name = leer.next();
+					System.out.println("Su Nombre tiene " + name.length() + " Caracteres...");
+					break;
+				case 3:
+					System.out.print("Ingrese el Numero que desee tener la Tabla: ");
+					int num = leer.nextInt();
+					for(int e = 1; e <= 10; e++){
+						System.out.println(e + " x " + num + " = " + e*num);
+					}
+					break;
+				case 4:
+					System.out.println("Algo dijo usted?");
+					System.out.print("> ");
+					leer.next();
+					System.out.println("Mmmmmh Definitivamente dijo Algo");
+					System.out.println("Continue con su Vida...");
+					break;
+				case 5:
+					System.out.println("Saliendo...");
+					break;
+				default:
+					System.out.println("Opcion Invalida...");
+			}
+		}
+	}
 }

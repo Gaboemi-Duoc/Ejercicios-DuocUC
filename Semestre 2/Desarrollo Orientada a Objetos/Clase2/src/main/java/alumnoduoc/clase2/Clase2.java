@@ -12,58 +12,58 @@ import java.util.Scanner;
 
 public class Clase2 {
 
-    public static void main(String[] args) {
-        Scanner read = new Scanner(System.in);
-        int exitOption = 5;
-        int option = 0;
-        int a,b,c,d;
-        System.out.println("Bienvenido!");
-        while (exitOption != option) {
-            System.out.println("1. Suma");
-            System.out.println("2. Resta");
-            System.out.println("3. Multiplicar");
-            System.out.println("4. Promedio");
-            System.out.println("5. Salir");
-            System.out.print("Ingrese una Opcion: ");
-            option = read.nextInt();
-            
-            switch (option) {
-                case 1:
+	public static void main(String[] args) {
+		Scanner read = new Scanner(System.in);
+		int exitOption = 5;
+		int option = 0;
+		int a,b,c,d;
+		System.out.println("Bienvenido!");
+		while (exitOption != option) {
+			System.out.println("1. Suma");
+			System.out.println("2. Resta");
+			System.out.println("3. Multiplicar");
+			System.out.println("4. Promedio");
+			System.out.println("5. Salir");
+			System.out.print("Ingrese una Opcion: ");
+			option = read.nextInt();
+			
+			switch (option) {
+				case 1:
 					System.out.print("Ingrese un Numero: ");
 					a = read.nextInt();
 					System.out.print("Ingrese otro Numero: ");
 					b = read.nextInt();
 					suma(a,b);
-                    break;
-                case 2:
-                    System.out.print("Ingrese un Numero: ");
-                    a = read.nextInt();
-                    System.out.print("Ingrese otro Numero: ");
-                    b = read.nextInt();
-                    c = a - b;
-                    resta(a,b);
 					break;
-                case 3:
-                    System.out.print("Ingrese un Numero: ");
-                    a = read.nextInt();
-                    System.out.print("Ingrese otro Numero: ");
-                    b = read.nextInt();
-                    multiplicacion(a,b);
-                    break;
-                case 4:
+				case 2:
+					System.out.print("Ingrese un Numero: ");
+					a = read.nextInt();
+					System.out.print("Ingrese otro Numero: ");
+					b = read.nextInt();
+					c = a - b;
+					resta(a,b);
+					break;
+				case 3:
+					System.out.print("Ingrese un Numero: ");
+					a = read.nextInt();
+					System.out.print("Ingrese otro Numero: ");
+					b = read.nextInt();
+					multiplicacion(a,b);
+					break;
+				case 4:
 					promedio(read);
-                    break;
+					break;
 
-                case 5:
-                    System.out.println("Saliendo, tenga un buen día...");
-                    break;
-                default:
-                    System.out.println("Error, Ingrese un Valor Valido...");
-            }
+				case 5:
+					System.out.println("Saliendo, tenga un buen día...");
+					break;
+				default:
+					System.out.println("Error, Ingrese un Valor Valido...");
+			}
 		
 		
-        }
-    }
+		}
+	}
 	
 	static void suma(int a,int b) {
 		int c = a + b;
