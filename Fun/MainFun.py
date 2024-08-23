@@ -103,7 +103,7 @@ print("Estadistica inicial:\n"+
 	  f"HP \t - {hp}\n"+
 	  f"Monedas\t - ${coin}")
 
-currMap = Map(lenMap)
+currMap = Map(size=lenMap)
 
 
 alive = True
