@@ -16,7 +16,7 @@ public class Clase2 {
 		Scanner read = new Scanner(System.in);
 		int exitOption = 5;
 		int option = 0;
-		int a,b,c,d;
+		int a,b,c;
 		System.out.println("Bienvenido!");
 		while (exitOption != option) {
 			System.out.println("1. Suma");

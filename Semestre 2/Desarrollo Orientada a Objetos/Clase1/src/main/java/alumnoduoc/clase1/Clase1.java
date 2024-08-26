@@ -174,5 +174,7 @@ public class Clase1 {
 					System.out.println("Opcion Invalida...");
 			}
 		}
+		
+		leer.close();
 	}
 }

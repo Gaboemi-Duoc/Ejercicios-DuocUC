@@ -12,16 +12,16 @@ import static alumnoduoc.clase3.Clase3.read;
  */
 public class Menu {
 	static void menu(){
-		final int exitOption = 7;
+		final int EXIT_OPTION = 7;
 		int option = 0;
-		while (exitOption != option) {
+		while (EXIT_OPTION != option) {
 			System.out.println("1. Suma");
 			System.out.println("2. Resta");
 			System.out.println("3. Multiplicar");
 			System.out.println("4. Promedio");
 			System.out.println("5. IVA");
 			System.out.println("6. Descuento Salud y AFP");
-			System.out.println( exitOption +". Salir");
+			System.out.println( EXIT_OPTION +". Salir");
 			System.out.print("Ingrese una Opcion: ");
 			option = read.nextInt();
 			
@@ -51,7 +51,7 @@ public class Menu {
 					Resultado.descSaludAFP();
 					break;
 
-				case exitOption:
+				case EXIT_OPTION:
 					System.out.println("Saliendo, tenga un buen día...");
 					break;
 				default:
