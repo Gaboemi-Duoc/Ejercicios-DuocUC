@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BD92131E-4EFE-F094-66DD-42020A9BB0DE" name="DEPARTMENT">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-08-29 18:44:10 UTC</createdTime>
+<ownerDesignName>clase5</ownerDesignName>
+<engineerTo>
+<item key="90ACB9D3-A596-5831-92F1-BEAB9F2E35E2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<synonym>Departamento</synonym>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="department_name" id="B6384C06-661C-6470-C8AF-00F25D5BEDBC">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-08-29 18:53:05 UTC</createdTime>
+<ownerDesignName>clase5</ownerDesignName>
+<engineerTo>
+<item key="90ACB9D3-A596-5831-92F1-BEAB9F2E35E2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="company_rut" id="7923738A-0616-1F76-3D80-C66CA8476162">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-08-29 18:53:59 UTC</createdTime>
+<generatorID>C4F0451F-C3FD-A154-DC26-F973608DE0B6</generatorID>
+<ownerDesignName>clase5</ownerDesignName>
+<engineerTo>
+<item key="90ACB9D3-A596-5831-92F1-BEAB9F2E35E2" value="true"/>
+</engineerTo>
+<referedAttribute>0A24066F-2A1C-1C09-C68F-E30113FB1AC7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F08D4737-1754-E259-D35B-EE8F0BD777C9" name="DEPARTMENT PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-08-29 18:53:07 UTC</createdTime>
+<ownerDesignName>clase5</ownerDesignName>
+<engineerTo>
+<item key="90ACB9D3-A596-5831-92F1-BEAB9F2E35E2" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B6384C06-661C-6470-C8AF-00F25D5BEDBC</attributeRef>
+<attributeRef>7923738A-0616-1F76-3D80-C66CA8476162</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

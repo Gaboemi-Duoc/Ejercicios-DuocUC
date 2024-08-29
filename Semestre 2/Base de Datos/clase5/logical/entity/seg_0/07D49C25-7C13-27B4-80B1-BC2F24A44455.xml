@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="07D49C25-7C13-27B4-80B1-BC2F24A44455" name="EMPLOYEE">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-08-29 18:44:21 UTC</createdTime>
+<ownerDesignName>clase5</ownerDesignName>
+<engineerTo>
+<item key="90ACB9D3-A596-5831-92F1-BEAB9F2E35E2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<synonym>Empleado</synonym>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="employee_run" id="72054CA5-5073-2567-118B-EF469568D5DF">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-08-29 19:05:34 UTC</createdTime>
+<ownerDesignName>clase5</ownerDesignName>
+<engineerTo>
+<item key="90ACB9D3-A596-5831-92F1-BEAB9F2E35E2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="department_name" id="2117112F-75D6-B33D-75AA-29773E578C40">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-08-29 19:07:27 UTC</createdTime>
+<generatorID>908C3BEA-1CFB-1584-0E67-54BD266CA2B2</generatorID>
+<ownerDesignName>clase5</ownerDesignName>
+<engineerTo>
+<item key="90ACB9D3-A596-5831-92F1-BEAB9F2E35E2" value="true"/>
+</engineerTo>
+<referedAttribute>B6384C06-661C-6470-C8AF-00F25D5BEDBC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="company_rut1" id="73FB2244-0573-BFE4-036C-8F3ACF01447A">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-08-29 19:07:27 UTC</createdTime>
+<generatorID>908C3BEA-1CFB-1584-0E67-54BD266CA2B2</generatorID>
+<ownerDesignName>clase5</ownerDesignName>
+<engineerTo>
+<item key="90ACB9D3-A596-5831-92F1-BEAB9F2E35E2" value="true"/>
+</engineerTo>
+<referedAttribute>7923738A-0616-1F76-3D80-C66CA8476162</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="company_rut" id="4ECBB989-6F29-C3B9-50D4-F0DF762FCD7D">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-08-29 19:09:00 UTC</createdTime>
+<generatorID>521CF269-E667-9E08-2C7C-86B3A4FBDF73</generatorID>
+<ownerDesignName>clase5</ownerDesignName>
+<engineerTo>
+<item key="90ACB9D3-A596-5831-92F1-BEAB9F2E35E2" value="true"/>
+</engineerTo>
+<referedAttribute>0A24066F-2A1C-1C09-C68F-E30113FB1AC7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="employee_run1" id="C65178BA-B27A-7DAE-1F88-9CCC6C2BC60F">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-08-29 19:11:40 UTC</createdTime>
+<generatorID>7A899DF6-9F17-1D38-CDE6-8E81D55A8E7B</generatorID>
+<ownerDesignName>clase5</ownerDesignName>
+<engineerTo>
+<item key="90ACB9D3-A596-5831-92F1-BEAB9F2E35E2" value="true"/>
+</engineerTo>
+<referedAttribute>72054CA5-5073-2567-118B-EF469568D5DF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="872FE199-D353-1BF5-6945-68E9AEC9A148" name="EMPLOYEE PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-08-29 19:05:56 UTC</createdTime>
+<ownerDesignName>clase5</ownerDesignName>
+<engineerTo>
+<item key="90ACB9D3-A596-5831-92F1-BEAB9F2E35E2" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>72054CA5-5073-2567-118B-EF469568D5DF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

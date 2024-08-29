@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="429F187D-65D6-763F-1A37-9F506FA5BD81" name="PRODUCT">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-08-29 19:24:21 UTC</createdTime>
+<ownerDesignName>clase5</ownerDesignName>
+<engineerTo>
+<item key="90ACB9D3-A596-5831-92F1-BEAB9F2E35E2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<synonym>Producto</synonym>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="client_run" id="3F18F218-310B-0EDC-928E-41FC55B1C589">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-08-29 19:27:14 UTC</createdTime>
+<generatorID>8A000DC3-B578-A2E9-33B9-C64E0C1E1A21</generatorID>
+<ownerDesignName>clase5</ownerDesignName>
+<engineerTo>
+<item key="90ACB9D3-A596-5831-92F1-BEAB9F2E35E2" value="true"/>
+</engineerTo>
+<referedAttribute>2EE365F8-C9C3-7920-C40B-2C212956486B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="product_id" id="5F87DF22-93AB-6BA4-0B7A-ACAC6D52D6F2">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-08-29 19:28:14 UTC</createdTime>
+<ownerDesignName>clase5</ownerDesignName>
+<engineerTo>
+<item key="90ACB9D3-A596-5831-92F1-BEAB9F2E35E2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>25</dataTypePrecision>
+<ownDataTypeParameters>,25,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="supplier_rut" id="3D2206B7-53F8-539A-122E-5C2B31B8F9E3">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-08-29 19:31:23 UTC</createdTime>
+<generatorID>5407F30F-A9AF-5135-BF2F-7EA81CF5D2B4</generatorID>
+<ownerDesignName>clase5</ownerDesignName>
+<engineerTo>
+<item key="90ACB9D3-A596-5831-92F1-BEAB9F2E35E2" value="true"/>
+</engineerTo>
+<referedAttribute>383CC40A-3351-F434-5088-7B04E5F1FAA1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="75F2C6CB-90D1-955B-EAD9-F24401BE3406" name="PRODUCT PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-08-29 19:28:15 UTC</createdTime>
+<ownerDesignName>clase5</ownerDesignName>
+<engineerTo>
+<item key="90ACB9D3-A596-5831-92F1-BEAB9F2E35E2" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5F87DF22-93AB-6BA4-0B7A-ACAC6D52D6F2</attributeRef>
+<attributeRef>3D2206B7-53F8-539A-122E-5C2B31B8F9E3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
