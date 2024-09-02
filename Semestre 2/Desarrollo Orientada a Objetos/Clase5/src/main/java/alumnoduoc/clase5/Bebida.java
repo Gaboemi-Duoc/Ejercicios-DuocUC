@@ -1,13 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package alumnoduoc.clase5;
-import static alumnoduoc.clase5.Pizzeria.read;
+import static alumnoduoc.clase5.Menu.nextInt;
 
 /**
  *
- * @author pvespucio
+ * @author Gabo's
  */
 public class Bebida {
 	
@@ -27,7 +24,7 @@ public class Bebida {
 		System.out.println("1. Coca Cola");
 		System.out.println("2. Sprite");
 		System.out.print("Ingrese una Opcion: ");
-		int option = read.nextInt();
+		int option = nextInt();
 		System.out.println("");
 		switch (option) {
 			case 1:
@@ -52,7 +49,7 @@ public class Bebida {
 		System.out.println("2. 500 ML");
 		System.out.println("3. 1 L");
 		System.out.print("Ingrese una Opcion: ");
-		int option = read.nextInt();
+		int option = nextInt();
 		System.out.println("");
 		switch (option) {
 			case 1:

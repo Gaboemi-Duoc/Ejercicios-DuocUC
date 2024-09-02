@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package alumnoduoc.clase5;
 import static alumnoduoc.clase5.Pizzeria.read;
 
@@ -23,7 +20,7 @@ public class Menu {
 			System.out.println("4. Generar Boleta");
 			System.out.println( EXIT_OPTION +". Salir");
 			System.out.print("Ingrese una Opcion: ");
-			option = read.nextInt();
+			option = nextInt();
 			System.out.println("");
 			
 			switch (option) {
@@ -58,4 +55,28 @@ public class Menu {
 		}
 	}
 
+	// Validar Int
+	public static int nextInt(){
+		int anInt;
+		if (read.hasNextInt()) {
+			anInt = read.nextInt();
+		} else {
+			anInt = -1;
+			read.nextLine();
+		}
+		return anInt;
+	}
+
+
+	// Ejemplo de try en Validor Int
+	public static int tryNextInt(){
+		int anInt;
+		try {
+			anInt = read.nextInt();
+		} catch(Exception e) {
+			anInt = -1;
+			read.nextLine();
+		}
+		return anInt;
+	}
 }
