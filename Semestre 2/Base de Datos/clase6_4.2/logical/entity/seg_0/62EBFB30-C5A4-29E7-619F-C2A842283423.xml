@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="62EBFB30-C5A4-29E7-619F-C2A842283423" name="CARGAS_FAMILIARES">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 15:44:40 UTC</createdTime>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="familiar_run" id="A7A66831-8664-7181-F47E-3242A7F6EFE2">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 15:49:44 UTC</createdTime>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="familiar_prim_nom" id="0E90BA1B-60D8-F062-A701-9D7AD28FD29C">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 15:50:24 UTC</createdTime>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="familiar_seg_nom" id="B6B1A31C-B513-52E2-1C16-F7542D5072A7">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 15:50:51 UTC</createdTime>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="familiar_pat_apellido" id="0973291B-0761-5387-8B99-00D5BD167BBD">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 15:51:20 UTC</createdTime>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="familiar_mat_apellido" id="793360A9-E75D-DED7-F251-64A1B1C71290">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 15:51:45 UTC</createdTime>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="familiar_fecha_nac" id="F5323FFB-1EE9-3FA5-385E-FC1CC8923FE8">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 15:52:07 UTC</createdTime>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="familiar_sex" id="5D879609-08DC-1C37-B6F4-0426959323F7">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 15:52:30 UTC</createdTime>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT041</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="familiar_parentesco" id="30E4E02E-1F27-17E9-123F-CC575A59B667">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 15:52:53 UTC</createdTime>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="47BB9681-FE6E-193C-94FB-AD2AABEA49F5" name="CARGAS_FAMILIARES PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 15:50:04 UTC</createdTime>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A7A66831-8664-7181-F47E-3242A7F6EFE2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

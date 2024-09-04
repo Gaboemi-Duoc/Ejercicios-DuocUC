@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="75D65BAE-9790-FD07-211F-DDA774B529A5" name="EMPRESA">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 16:25:17 UTC</createdTime>
+<ownerDesignName>clase6_4.2_2</ownerDesignName>
+<engineerTo>
+<item key="D30DB4B8-DF13-6C76-490A-4F430B901998" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="empresa_rut" id="598847E6-3EB2-5B78-AFAB-0AC8423F5E0C">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 16:26:09 UTC</createdTime>
+<ownerDesignName>clase6_4.2_2</ownerDesignName>
+<engineerTo>
+<item key="D30DB4B8-DF13-6C76-490A-4F430B901998" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="empresa_razon" id="C46198F4-775F-413C-0AE6-A812E537FC41">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 16:26:26 UTC</createdTime>
+<ownerDesignName>clase6_4.2_2</ownerDesignName>
+<engineerTo>
+<item key="D30DB4B8-DF13-6C76-490A-4F430B901998" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="empresa_fecha_creacion" id="1FAF2F92-8C60-624D-81BD-C3059A8E0ACF">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 16:26:46 UTC</createdTime>
+<ownerDesignName>clase6_4.2_2</ownerDesignName>
+<engineerTo>
+<item key="D30DB4B8-DF13-6C76-490A-4F430B901998" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="empresa_patrimonio" id="1DCFBF1D-4DAB-981B-DD5E-B1101D6D3F99">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 16:27:08 UTC</createdTime>
+<ownerDesignName>clase6_4.2_2</ownerDesignName>
+<engineerTo>
+<item key="D30DB4B8-DF13-6C76-490A-4F430B901998" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D9090463-4F9A-C481-5532-562625D08459" name="EMPRESA PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 16:26:17 UTC</createdTime>
+<ownerDesignName>clase6_4.2_2</ownerDesignName>
+<engineerTo>
+<item key="D30DB4B8-DF13-6C76-490A-4F430B901998" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>598847E6-3EB2-5B78-AFAB-0AC8423F5E0C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

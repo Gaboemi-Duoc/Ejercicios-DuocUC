@@ -1,0 +1,203 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C4C273AA-8B59-176F-FE98-C2F5063C6268" name="TRABAJADOR">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 15:24:07 UTC</createdTime>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="trabajador_rut" id="A0DB9DD6-5AC7-22DA-694F-1602354FD0EF">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 15:29:34 UTC</createdTime>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="trabajador_prim_nom" id="CE7E3662-A568-AEDD-5743-BE3BB8BB5B17">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 15:30:14 UTC</createdTime>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="trabajador_seg_nom" id="F0C3D232-B98B-4F25-EC4F-BB6D2EF7CD28">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 15:33:15 UTC</createdTime>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="trabajador_pat_apellido" id="89A81CF0-CB36-AFB0-285A-4F065E7D31C0">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 15:34:16 UTC</createdTime>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="trabajador_mat_apellido" id="40A27D12-ABBC-20EA-B7DB-5F12C7E3AEE5">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 15:34:50 UTC</createdTime>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="trabajador_direccion" id="433FACCF-70CF-D359-DFF9-A402EDEC336B">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 15:35:16 UTC</createdTime>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="trabajador_region" id="A7B9B53C-071E-F0CC-5F16-EF0EEFB08090">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 15:36:09 UTC</createdTime>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="trabajador_provincia" id="6D694335-9977-1B42-6DFA-410AC4FB621D">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 15:36:54 UTC</createdTime>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="trabajador_comuna" id="65FA4262-C1B6-5E7E-533C-420034754BED">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 15:37:22 UTC</createdTime>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="trabajador_fecha_nac" id="8D0BB821-4A87-00D3-283A-1F0E704475A4">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 15:37:40 UTC</createdTime>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="trabajador_tipo_sang" id="A3296ABB-3A2C-1B51-9F23-7808ED4DBD6C">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 15:38:04 UTC</createdTime>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="trabajador_obs" id="BC4F8511-C86A-76A1-B01B-82C5D0E33C85">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 15:38:52 UTC</createdTime>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contrato_num" id="38525F57-BCC0-86C2-714F-F19F2D2FA8B0">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 16:16:57 UTC</createdTime>
+<generatorID>0EAD48A7-FE83-0A4A-8704-4306A028BC72</generatorID>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<referedAttribute>F986F968-FC7A-F9D1-C1C4-F04534B2AE82</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="66C1073C-915B-DF2A-CF1F-A0AA85A0BFE4" name="TRABAJADOR PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 15:29:42 UTC</createdTime>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A0DB9DD6-5AC7-22DA-694F-1602354FD0EF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

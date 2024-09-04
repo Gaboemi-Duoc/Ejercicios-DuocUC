@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BD9D63D3-BCD2-483D-1351-F7766E1A888A" name="CONTRATO">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 15:22:33 UTC</createdTime>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="contrato_num" id="F986F968-FC7A-F9D1-C1C4-F04534B2AE82">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 16:02:12 UTC</createdTime>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contrato_fecha_firma" id="F15EAE52-A766-89E7-731F-B039F1C9F132">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 16:15:16 UTC</createdTime>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contrato_fecha_mes" id="52C96426-9E68-DF93-D9A9-004A94E37AF4">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 16:00:48 UTC</createdTime>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contrato_fecha_trab" id="48970B49-7A0C-3AEE-F60A-30F56251BEB8">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 16:01:32 UTC</createdTime>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="notaria_nombre" id="2BFCE60D-2981-4EC7-4739-F04416BA453E">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 16:16:15 UTC</createdTime>
+<generatorID>C2546CEA-5479-8834-5BD7-1B62406B9499</generatorID>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<referedAttribute>9D3DAF87-F746-7E0D-DC1C-BF5D0ABD27C7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="trabajador_rut" id="D3E07A99-AB6E-0591-268D-C75BA01FAC9B">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 16:17:12 UTC</createdTime>
+<generatorID>0EAD48A7-FE83-0A4A-8704-4306A028BC72</generatorID>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<referedAttribute>A0DB9DD6-5AC7-22DA-694F-1602354FD0EF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="empresa_rut" id="F6CD6D31-AC50-9694-A390-F4ABED844027">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 16:21:57 UTC</createdTime>
+<generatorID>10F8DCE8-D669-E50B-3B55-019C03643DF1</generatorID>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<referedAttribute>3C525B9F-0DDA-5308-6302-B905F58CBF18</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5FC944F0-8D43-B951-0CB8-E37113DBDFCC" name="CONTRATO PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-04 16:02:27 UTC</createdTime>
+<ownerDesignName>clase6_4.2</ownerDesignName>
+<engineerTo>
+<item key="17BC9E27-363C-3722-A397-73268DE66B8E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F986F968-FC7A-F9D1-C1C4-F04534B2AE82</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
