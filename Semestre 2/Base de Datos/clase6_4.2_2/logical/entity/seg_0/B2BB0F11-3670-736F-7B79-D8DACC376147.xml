@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="75D65BAE-9790-FD07-211F-DDA774B529A5" name="EMPRESA">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B2BB0F11-3670-736F-7B79-D8DACC376147" name="PASAPORTE">
 <createdBy>pvespucio</createdBy>
-<createdTime>2024-09-04 16:25:17 UTC</createdTime>
+<createdTime>2024-09-05 18:54:25 UTC</createdTime>
 <ownerDesignName>clase6_4.2_2</ownerDesignName>
 <engineerTo>
 <item key="D30DB4B8-DF13-6C76-490A-4F430B901998" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="empresa_rut" id="598847E6-3EB2-5B78-AFAB-0AC8423F5E0C">
+<Attribute name="pasaporte_val" id="C622FE90-922D-E3DC-7E7F-5955C57474E1">
 <createdBy>pvespucio</createdBy>
-<createdTime>2024-09-04 16:26:09 UTC</createdTime>
+<createdTime>2024-09-05 18:59:45 UTC</createdTime>
 <ownerDesignName>clase6_4.2_2</ownerDesignName>
 <engineerTo>
 <item key="D30DB4B8-DF13-6C76-490A-4F430B901998" value="true"/>
@@ -25,12 +25,12 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>9</dataTypeSize>
-<ownDataTypeParameters>9,,</ownDataTypeParameters>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="empresa_razon" id="C46198F4-775F-413C-0AE6-A812E537FC41">
+<Attribute name="pasaporte_tipo" id="DF22AA3C-AB2C-F26D-E807-C1B99C1E19CD">
 <createdBy>pvespucio</createdBy>
-<createdTime>2024-09-04 16:26:26 UTC</createdTime>
+<createdTime>2024-09-05 18:59:45 UTC</createdTime>
 <ownerDesignName>clase6_4.2_2</ownerDesignName>
 <engineerTo>
 <item key="D30DB4B8-DF13-6C76-490A-4F430B901998" value="true"/>
@@ -38,12 +38,25 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>256</dataTypeSize>
-<ownDataTypeParameters>256,,</ownDataTypeParameters>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="empresa_fecha_creacion" id="1FAF2F92-8C60-624D-81BD-C3059A8E0ACF">
+<Attribute name="pasaporte_pais" id="B5022B89-B277-D3E3-A792-A9D7CACCDB57">
 <createdBy>pvespucio</createdBy>
-<createdTime>2024-09-04 16:26:46 UTC</createdTime>
+<createdTime>2024-09-05 18:59:45 UTC</createdTime>
+<ownerDesignName>clase6_4.2_2</ownerDesignName>
+<engineerTo>
+<item key="D30DB4B8-DF13-6C76-490A-4F430B901998" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pasaporte_venc" id="7B302CFF-EED3-66F9-A9B1-57DC1D660363">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-05 19:00:13 UTC</createdTime>
 <ownerDesignName>clase6_4.2_2</ownerDesignName>
 <engineerTo>
 <item key="D30DB4B8-DF13-6C76-490A-4F430B901998" value="true"/>
@@ -53,30 +66,43 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="empresa_patrimonio" id="1DCFBF1D-4DAB-981B-DD5E-B1101D6D3F99">
+<Attribute name="pasaporte_visa_tipo" id="3C92F862-D571-A82B-7305-906A029EB42D">
 <createdBy>pvespucio</createdBy>
-<createdTime>2024-09-04 16:27:08 UTC</createdTime>
+<createdTime>2024-09-05 19:00:21 UTC</createdTime>
 <ownerDesignName>clase6_4.2_2</ownerDesignName>
 <engineerTo>
 <item key="D30DB4B8-DF13-6C76-490A-4F430B901998" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT043</logicalDatatype>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pasaporte_tiempo_estadia" id="4F6010B7-F9F8-1616-2FE9-C4E071A4D12C">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-05 19:01:57 UTC</createdTime>
+<ownerDesignName>clase6_4.2_2</ownerDesignName>
+<engineerTo>
+<item key="D30DB4B8-DF13-6C76-490A-4F430B901998" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="D9090463-4F9A-C481-5532-562625D08459" name="EMPRESA PK">
+<identifier id="071EF88A-E92E-5547-9F7F-3ABB36131844" name="PASAPORTE PK">
 <createdBy>pvespucio</createdBy>
-<createdTime>2024-09-04 16:26:17 UTC</createdTime>
+<createdTime>2024-09-05 18:59:49 UTC</createdTime>
 <ownerDesignName>clase6_4.2_2</ownerDesignName>
 <engineerTo>
 <item key="D30DB4B8-DF13-6C76-490A-4F430B901998" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>598847E6-3EB2-5B78-AFAB-0AC8423F5E0C</attributeRef>
+<attributeRef>C622FE90-922D-E3DC-7E7F-5955C57474E1</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

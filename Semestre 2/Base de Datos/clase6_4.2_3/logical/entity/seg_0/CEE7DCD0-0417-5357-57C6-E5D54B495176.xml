@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CEE7DCD0-0417-5357-57C6-E5D54B495176" name="VIDEO">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-05 19:29:12 UTC</createdTime>
+<ownerDesignName>clase6_4.2_3</ownerDesignName>
+<engineerTo>
+<item key="D516DBE1-E0CE-6A56-C19B-2F0DF61473F0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="video_id" id="36A34ABD-D6E1-E500-43E9-8297DC413F03">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-05 19:33:34 UTC</createdTime>
+<ownerDesignName>clase6_4.2_3</ownerDesignName>
+<engineerTo>
+<item key="D516DBE1-E0CE-6A56-C19B-2F0DF61473F0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="video_title" id="EA553AFE-44B1-C6CD-6DAC-A08C51D2CF26">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-05 19:33:54 UTC</createdTime>
+<ownerDesignName>clase6_4.2_3</ownerDesignName>
+<engineerTo>
+<item key="D516DBE1-E0CE-6A56-C19B-2F0DF61473F0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="video_desc" id="3767BD29-C261-4ADD-D9C9-02E124AFF6A8">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-05 19:34:08 UTC</createdTime>
+<ownerDesignName>clase6_4.2_3</ownerDesignName>
+<engineerTo>
+<item key="D516DBE1-E0CE-6A56-C19B-2F0DF61473F0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="video_size" id="4FAE48ED-A90B-72CE-FDF1-2B0AB4B71042">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-05 19:34:15 UTC</createdTime>
+<ownerDesignName>clase6_4.2_3</ownerDesignName>
+<engineerTo>
+<item key="D516DBE1-E0CE-6A56-C19B-2F0DF61473F0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5214CF19-7D7F-9ACF-A92F-5EF27E95D45B" name="VIDEO PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-05 19:33:52 UTC</createdTime>
+<ownerDesignName>clase6_4.2_3</ownerDesignName>
+<engineerTo>
+<item key="D516DBE1-E0CE-6A56-C19B-2F0DF61473F0" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>36A34ABD-D6E1-E500-43E9-8297DC413F03</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -14,4 +14,163 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="postulante_oficio_profesion" id="16BA6B91-4F1D-09F7-6C5D-98D06C2EBEF5">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-05 19:13:22 UTC</createdTime>
+<ownerDesignName>clase6_4.2_2</ownerDesignName>
+<engineerTo>
+<item key="D30DB4B8-DF13-6C76-490A-4F430B901998" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="postulante_estudios" id="5E52AC9E-D5F2-A75A-16C5-0AFB69264221">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-05 19:14:03 UTC</createdTime>
+<ownerDesignName>clase6_4.2_2</ownerDesignName>
+<engineerTo>
+<item key="D30DB4B8-DF13-6C76-490A-4F430B901998" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="postulante_annum_exp" id="DDA446FE-4314-AB78-B48B-4D96DCBC2AF9">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-05 19:13:37 UTC</createdTime>
+<ownerDesignName>clase6_4.2_2</ownerDesignName>
+<engineerTo>
+<item key="D30DB4B8-DF13-6C76-490A-4F430B901998" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="postulante_nombre" id="06E44687-2603-F8D8-468A-F467105BEEE9">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-05 19:39:08 UTC</createdTime>
+<ownerDesignName>clase6_4.2_2</ownerDesignName>
+<engineerTo>
+<item key="D30DB4B8-DF13-6C76-490A-4F430B901998" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="postulante_ape_pat" id="11C3BDE4-3AC0-0EFE-8E17-CB3CC0EA29ED">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-05 19:39:08 UTC</createdTime>
+<ownerDesignName>clase6_4.2_2</ownerDesignName>
+<engineerTo>
+<item key="D30DB4B8-DF13-6C76-490A-4F430B901998" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="postulante_ape_mat" id="AFC6F14B-D2B8-BF25-8D4A-E04670318147">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-05 19:39:08 UTC</createdTime>
+<ownerDesignName>clase6_4.2_2</ownerDesignName>
+<engineerTo>
+<item key="D30DB4B8-DF13-6C76-490A-4F430B901998" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="postulante_nacionalidad" id="AA4DBCDD-CCF7-634F-1171-94F6C8334C9C">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-05 19:39:08 UTC</createdTime>
+<ownerDesignName>clase6_4.2_2</ownerDesignName>
+<engineerTo>
+<item key="D30DB4B8-DF13-6C76-490A-4F430B901998" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="postulante_pais_nac" id="03222E4F-D4F3-AA46-92B6-1347A7BD589F">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-05 19:39:08 UTC</createdTime>
+<ownerDesignName>clase6_4.2_2</ownerDesignName>
+<engineerTo>
+<item key="D30DB4B8-DF13-6C76-490A-4F430B901998" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="postulante_fecha_nac" id="A55FDA39-95D3-A24F-6360-72E81BB4CDAE">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-05 19:39:08 UTC</createdTime>
+<ownerDesignName>clase6_4.2_2</ownerDesignName>
+<engineerTo>
+<item key="D30DB4B8-DF13-6C76-490A-4F430B901998" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="postulante_sex" id="518B14A0-D6B9-5EAA-2540-9EA3451005E5">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-05 19:39:08 UTC</createdTime>
+<ownerDesignName>clase6_4.2_2</ownerDesignName>
+<engineerTo>
+<item key="D30DB4B8-DF13-6C76-490A-4F430B901998" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pasaporte_val" id="739957D5-47C1-8175-15C5-6E5DC681E2B9">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-05 19:18:39 UTC</createdTime>
+<generatorID>AA5C7E50-9FDB-B838-CF29-FBFB19F62E3F</generatorID>
+<ownerDesignName>clase6_4.2_2</ownerDesignName>
+<engineerTo>
+<item key="D30DB4B8-DF13-6C76-490A-4F430B901998" value="true"/>
+</engineerTo>
+<referedAttribute>C622FE90-922D-E3DC-7E7F-5955C57474E1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="44C79AF0-72BA-EC9A-59A1-59BB213AB63A" name="POSTULANTE PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-05 18:45:26 UTC</createdTime>
+<ownerDesignName>clase6_4.2_2</ownerDesignName>
+<engineerTo>
+<item key="D30DB4B8-DF13-6C76-490A-4F430B901998" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>739957D5-47C1-8175-15C5-6E5DC681E2B9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

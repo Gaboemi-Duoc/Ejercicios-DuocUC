@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2CBCB194-D9D2-3EEA-24A3-153F36F0C7E3" name="ANON_USER">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-05 19:35:39 UTC</createdTime>
+<ownerDesignName>clase6_4.2_3</ownerDesignName>
+<engineerTo>
+<item key="D516DBE1-E0CE-6A56-C19B-2F0DF61473F0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="anon_id" id="7E92525C-FDB2-E36A-E981-4BF7E50B8B12">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-05 19:35:48 UTC</createdTime>
+<ownerDesignName>clase6_4.2_3</ownerDesignName>
+<engineerTo>
+<item key="D516DBE1-E0CE-6A56-C19B-2F0DF61473F0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="anon_email" id="89D6086B-DAA9-65BA-3B0D-CDDC6026C3F3">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-05 19:36:03 UTC</createdTime>
+<ownerDesignName>clase6_4.2_3</ownerDesignName>
+<engineerTo>
+<item key="D516DBE1-E0CE-6A56-C19B-2F0DF61473F0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B5A2218C-CD5D-48D7-A720-09EC9F6764F9" name="ANON_USER PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-05 19:36:02 UTC</createdTime>
+<ownerDesignName>clase6_4.2_3</ownerDesignName>
+<engineerTo>
+<item key="D516DBE1-E0CE-6A56-C19B-2F0DF61473F0" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7E92525C-FDB2-E36A-E981-4BF7E50B8B12</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
