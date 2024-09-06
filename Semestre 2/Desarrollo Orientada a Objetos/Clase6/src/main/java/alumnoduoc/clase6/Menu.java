@@ -151,6 +151,7 @@ public class Menu { // Asociar Examen ; Pedir cliente para boleta
 		int n = 1;
 		for (Exam exam : examList) {
 			System.out.println(n + ". " + exam.name + " - Codigo " + exam.code);
+			n += 1;
 		}
 		System.out.print("Ingrese el examen el cual quiera cambiar: ");
 		int opc = nextInt() - 1;
