@@ -22,6 +22,10 @@ public class Client {
 		return code;
 	}
 
+	public String getNombre() {
+		return nombre;
+	}
+
 	@Override
 	public String toString() {
 		return "Client{" + "code=" + code + ", nombre=" + nombre + ", salud=" + salud + '}';

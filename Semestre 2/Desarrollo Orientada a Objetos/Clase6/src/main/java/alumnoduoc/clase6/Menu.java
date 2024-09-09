@@ -96,28 +96,30 @@ public class Menu { // Asociar Examen ; Pedir cliente para boleta
 		System.out.print("Ingrese nombre del examen: ");
 		String name = read.next();
 		System.out.print("Ingrese codigo del cliente asociado: ");
-		int code = nextInt();
 
 		boolean validateClient = false;
-		for (Client client : clientList) {
-			if (client.getCode() == code) {
-				validateClient = true;
+
+		while (validateClient == false) {
+			int code = nextInt();
+			for (Client client : clientList) {
+				if (client.getCode() == code) {
+					validateClient = true;
+				}
+			}
+
+			if (validateClient) {
+				System.out.print("Ingrese el costo del examen: ");
+				int value = nextInt();
+				
+				read.nextLine();
+				Exam newExam = new Exam(name, code, value);
+				examList.add(newExam);
+		
+				System.out.println("Examen Creado Exitosamente.");
+			} else {
+				System.out.println("Cliente no existe, Examen Fallido.");
 			}
 		}
-
-		if (validateClient) {
-			System.out.print("Ingrese el costo del examen: ");
-			int value = nextInt();
-			
-			read.nextLine();
-			Exam newExam = new Exam(name, code, value);
-			examList.add(newExam);
-	
-			System.out.println("Examen Creado Exitosamente.");
-		} else {
-			System.out.println("Cliente no existe, Examen Fallido.");
-		}
-
 	}
 
 	static void seeClients() {
@@ -135,16 +137,30 @@ public class Menu { // Asociar Examen ; Pedir cliente para boleta
 		System.out.print("Ingrese codigo del cliente: ");
 		int code = nextInt();
 		int total = 0;
+		String clientName = "";
 
-		System.out.println("Boleta de " + "nombre cliente");
-		for (Exam exam : examList) {
-			if (exam.getCode() == code) {
-				int value = exam.getValue();
-				System.out.println( exam.getName()+": "+ value);
-				total += value;
+		boolean validateClient = false;
+		for (Client client : clientList) {
+			if (client.getCode() == code) {
+				validateClient = true;
+				clientName = client.getNombre();
 			}
 		}
-		System.out.println( "Total: "+ total);
+
+		if(validateClient) {
+
+			System.out.println("Boleta de " + clientName);
+			for (Exam exam : examList) {
+				if (exam.getCode() == code) {
+					int value = exam.getValue();
+					System.out.println( exam.getName()+": "+ value);
+					total += value;
+				}
+			}
+			System.out.println( "Total: "+ total);
+		} else {
+			System.out.println( "Error! Cliente no existe");
+		}
 	}
 
 	static void setExamCode() {
@@ -157,7 +173,19 @@ public class Menu { // Asociar Examen ; Pedir cliente para boleta
 		int opc = nextInt() - 1;
 		if (opc <= examList.size() && opc >= 0) {
 			System.out.print("Ingrese el codigo del cliente al que quiere asociar: ");
-			examList.get(opc).setCode(nextInt());
+			int code = nextInt();
+			
+			boolean validateClient = false;
+			for (Client client : clientList) {
+				if (client.getCode() == code) {
+					validateClient = true;
+				}
+			}
+			if(validateClient) {
+				examList.get(opc).setCode(code);
+			} else {
+				System.out.println("Error! Cliente no Existe");
+			}
 
 			System.out.println("Examen Asociado Exitosamente.");
 		} else {
