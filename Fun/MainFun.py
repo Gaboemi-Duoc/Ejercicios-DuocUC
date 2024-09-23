@@ -113,3 +113,6 @@ while alive:
 	if hp <= 0:
 		alive = False
 
+	else:
+		print(currMap.currRoom.intro)
+		pass

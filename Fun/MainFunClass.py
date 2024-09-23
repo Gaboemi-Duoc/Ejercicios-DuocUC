@@ -1,8 +1,18 @@
 import random
 
+class MapRoom:
+    intro = "Welcome to Test"
+    
+    def main():
+        pass
+    
+    
+    
+
 class Map:
 	
 	data = ""
+	currRoom = MapRoom
 	lenght = None
 
 	def __init__(self, size):
@@ -35,3 +45,13 @@ class Map:
 					self.data += "w"
 				else:
 					self.data += "G"
+
+class Player:
+	alive = True
+	name, className = ""
+	hp, maxHp, atk, df, coin = 0
+	
+class Battle:
+    battleMap = [
+		[]
+	]
