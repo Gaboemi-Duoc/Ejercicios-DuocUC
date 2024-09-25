@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="74AEA7B0-85CC-5761-7ACB-817D332C100B" name="ENTIDAD_PAGADORA_CODEUDORA">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-25 14:59:37 UTC</createdTime>
+<ownerDesignName>clase7_2.1.4.1</ownerDesignName>
+<engineerTo>
+<item key="E4C4DF19-30BF-7CE9-5179-8BDAEC250902" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rut" id="4C7985B1-52CA-2E9F-9D8F-D5E676C59E94">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-25 15:00:02 UTC</createdTime>
+<ownerDesignName>clase7_2.1.4.1</ownerDesignName>
+<engineerTo>
+<item key="E4C4DF19-30BF-7CE9-5179-8BDAEC250902" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="razon_social" id="C2F8B0B3-0887-9122-379F-70E817150A54">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-25 15:00:02 UTC</createdTime>
+<ownerDesignName>clase7_2.1.4.1</ownerDesignName>
+<engineerTo>
+<item key="E4C4DF19-30BF-7CE9-5179-8BDAEC250902" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mail" id="8EFDAB79-E63C-5F1E-6E99-0BAC37DD8B40">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-25 15:00:02 UTC</createdTime>
+<ownerDesignName>clase7_2.1.4.1</ownerDesignName>
+<engineerTo>
+<item key="E4C4DF19-30BF-7CE9-5179-8BDAEC250902" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="direccion" id="63A3AAB7-56E8-C63A-F134-AEABDF55E5C8">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-25 15:00:02 UTC</createdTime>
+<ownerDesignName>clase7_2.1.4.1</ownerDesignName>
+<engineerTo>
+<item key="E4C4DF19-30BF-7CE9-5179-8BDAEC250902" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefono" id="C8776A1B-A196-4692-CBE7-95FA044934DF">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-25 15:00:02 UTC</createdTime>
+<ownerDesignName>clase7_2.1.4.1</ownerDesignName>
+<engineerTo>
+<item key="E4C4DF19-30BF-7CE9-5179-8BDAEC250902" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A7920BAB-4DCD-F373-F864-FD68489093BB" name="ENTIDAD_PAGADORA_CODEUDORA PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-25 15:00:07 UTC</createdTime>
+<ownerDesignName>clase7_2.1.4.1</ownerDesignName>
+<engineerTo>
+<item key="E4C4DF19-30BF-7CE9-5179-8BDAEC250902" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4C7985B1-52CA-2E9F-9D8F-D5E676C59E94</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

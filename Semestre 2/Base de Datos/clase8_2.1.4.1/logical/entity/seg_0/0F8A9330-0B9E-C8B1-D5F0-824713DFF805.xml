@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0F8A9330-0B9E-C8B1-D5F0-824713DFF805" name="CODEUDOR">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-25 14:58:17 UTC</createdTime>
+<ownerDesignName>clase7_2.1.4.1</ownerDesignName>
+<engineerTo>
+<item key="E4C4DF19-30BF-7CE9-5179-8BDAEC250902" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rut" id="2F5A0FEC-0C9D-EAF2-DD07-3C6246F93A88">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-25 14:58:49 UTC</createdTime>
+<ownerDesignName>clase7_2.1.4.1</ownerDesignName>
+<engineerTo>
+<item key="E4C4DF19-30BF-7CE9-5179-8BDAEC250902" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombres" id="49583A04-39EE-9089-3922-C1DD83BB16E4">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-25 14:58:49 UTC</createdTime>
+<ownerDesignName>clase7_2.1.4.1</ownerDesignName>
+<engineerTo>
+<item key="E4C4DF19-30BF-7CE9-5179-8BDAEC250902" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="apellido_pat" id="0DBA782C-EB02-4029-27E3-8C65B47C8799">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-25 14:58:49 UTC</createdTime>
+<ownerDesignName>clase7_2.1.4.1</ownerDesignName>
+<engineerTo>
+<item key="E4C4DF19-30BF-7CE9-5179-8BDAEC250902" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="apellido_mat" id="4FD81900-86FA-9423-C859-D59F12187577">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-25 14:58:49 UTC</createdTime>
+<ownerDesignName>clase7_2.1.4.1</ownerDesignName>
+<engineerTo>
+<item key="E4C4DF19-30BF-7CE9-5179-8BDAEC250902" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mail" id="0DB2E98C-189F-C0D5-B2DC-0042813EECCA">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-25 14:58:49 UTC</createdTime>
+<ownerDesignName>clase7_2.1.4.1</ownerDesignName>
+<engineerTo>
+<item key="E4C4DF19-30BF-7CE9-5179-8BDAEC250902" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="direccion" id="2B15B323-B63D-E35F-9533-CF1ECBCB012A">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-25 14:58:49 UTC</createdTime>
+<ownerDesignName>clase7_2.1.4.1</ownerDesignName>
+<engineerTo>
+<item key="E4C4DF19-30BF-7CE9-5179-8BDAEC250902" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefono" id="E4AA23E1-6E97-FF8B-8507-BCA1EA3EA782">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-25 14:58:49 UTC</createdTime>
+<ownerDesignName>clase7_2.1.4.1</ownerDesignName>
+<engineerTo>
+<item key="E4C4DF19-30BF-7CE9-5179-8BDAEC250902" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="renta_imponible" id="1D98965F-9027-DA59-77BE-7CCDD740B9A2">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-25 14:59:05 UTC</createdTime>
+<ownerDesignName>clase7_2.1.4.1</ownerDesignName>
+<engineerTo>
+<item key="E4C4DF19-30BF-7CE9-5179-8BDAEC250902" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo" id="7BBAAA63-45D0-BAFB-63F3-7070EB2071C9">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-25 15:06:30 UTC</createdTime>
+<generatorID>815A8C84-4066-9094-BFFD-EC7B71C1F723</generatorID>
+<ownerDesignName>clase7_2.1.4.1</ownerDesignName>
+<engineerTo>
+<item key="E4C4DF19-30BF-7CE9-5179-8BDAEC250902" value="true"/>
+</engineerTo>
+<referedAttribute>3B5AA800-3134-64A4-6C1D-9200B957E213</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F4EE4E1A-E676-2896-15FC-F7318DDCB7CE" name="CODEUDOR PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-25 15:00:12 UTC</createdTime>
+<ownerDesignName>clase7_2.1.4.1</ownerDesignName>
+<engineerTo>
+<item key="E4C4DF19-30BF-7CE9-5179-8BDAEC250902" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2F5A0FEC-0C9D-EAF2-DD07-3C6246F93A88</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

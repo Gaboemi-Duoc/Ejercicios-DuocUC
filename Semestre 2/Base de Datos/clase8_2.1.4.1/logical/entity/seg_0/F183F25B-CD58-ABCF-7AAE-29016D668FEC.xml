@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F183F25B-CD58-ABCF-7AAE-29016D668FEC" name="PRESTAMO_MEDICO">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-25 14:39:02 UTC</createdTime>
+<ownerDesignName>clase7_2.1.4.1</ownerDesignName>
+<engineerTo>
+<item key="E4C4DF19-30BF-7CE9-5179-8BDAEC250902" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="numero" id="7990A7A5-5233-13CB-6522-02C337129611">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-25 14:55:00 UTC</createdTime>
+<ownerDesignName>clase7_2.1.4.1</ownerDesignName>
+<engineerTo>
+<item key="E4C4DF19-30BF-7CE9-5179-8BDAEC250902" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="monto" id="C424453B-5025-CA34-BC9E-A731A7233AD9">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-25 14:55:04 UTC</createdTime>
+<ownerDesignName>clase7_2.1.4.1</ownerDesignName>
+<engineerTo>
+<item key="E4C4DF19-30BF-7CE9-5179-8BDAEC250902" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo" id="A375D980-3E3D-642A-B461-C9CE3EAD6A67">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-25 15:00:49 UTC</createdTime>
+<generatorID>11FB3675-36CC-0D91-A1CA-37A5CA941DB7</generatorID>
+<ownerDesignName>clase7_2.1.4.1</ownerDesignName>
+<engineerTo>
+<item key="E4C4DF19-30BF-7CE9-5179-8BDAEC250902" value="true"/>
+</engineerTo>
+<referedAttribute>0785170D-F52E-FE29-B87F-7FD08BE1F23C</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero1" id="D1B014AD-574E-68EA-496B-68A8F589C732">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-25 15:01:18 UTC</createdTime>
+<generatorID>A222502D-F6D1-A2E4-670E-2B09AA546BD9</generatorID>
+<ownerDesignName>clase7_2.1.4.1</ownerDesignName>
+<engineerTo>
+<item key="E4C4DF19-30BF-7CE9-5179-8BDAEC250902" value="true"/>
+</engineerTo>
+<referedAttribute>3634460D-7272-FAB4-9171-49A974864406</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut" id="E712E44B-05F3-1078-D0EB-71EB07A0D009">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-25 15:02:26 UTC</createdTime>
+<generatorID>5BB94F3F-E96F-2B3F-B737-8E8F3AEFE904</generatorID>
+<ownerDesignName>clase7_2.1.4.1</ownerDesignName>
+<engineerTo>
+<item key="E4C4DF19-30BF-7CE9-5179-8BDAEC250902" value="true"/>
+</engineerTo>
+<referedAttribute>F306D527-839D-5564-7598-48C7AF6E2FDB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut1" id="4C9D4E66-F4B4-C3D3-E840-5F87B83D8A36">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-25 15:02:51 UTC</createdTime>
+<generatorID>5B484CBC-FA3A-29F4-BE19-A8206CB57BBF</generatorID>
+<ownerDesignName>clase7_2.1.4.1</ownerDesignName>
+<engineerTo>
+<item key="E4C4DF19-30BF-7CE9-5179-8BDAEC250902" value="true"/>
+</engineerTo>
+<referedAttribute>3ACB3275-1430-5D0B-EB8F-5A0060B65AF8</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut2" id="B556E458-BC4B-E768-CCCD-9FEF019890A5">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-25 15:02:57 UTC</createdTime>
+<generatorID>AFFC57E7-47C7-28CA-0B65-4A9723F389BC</generatorID>
+<ownerDesignName>clase7_2.1.4.1</ownerDesignName>
+<engineerTo>
+<item key="E4C4DF19-30BF-7CE9-5179-8BDAEC250902" value="true"/>
+</engineerTo>
+<referedAttribute>2F5A0FEC-0C9D-EAF2-DD07-3C6246F93A88</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut3" id="1F481777-B262-2F77-8C9A-2577D2C14586">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-25 15:03:02 UTC</createdTime>
+<generatorID>225D2C24-E773-28DA-A843-36200865DA11</generatorID>
+<ownerDesignName>clase7_2.1.4.1</ownerDesignName>
+<engineerTo>
+<item key="E4C4DF19-30BF-7CE9-5179-8BDAEC250902" value="true"/>
+</engineerTo>
+<referedAttribute>4C7985B1-52CA-2E9F-9D8F-D5E676C59E94</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="18464487-27D2-E629-7BC1-30C548C369A0" name="PRESTAMO_MEDICO PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-25 14:55:03 UTC</createdTime>
+<ownerDesignName>clase7_2.1.4.1</ownerDesignName>
+<engineerTo>
+<item key="E4C4DF19-30BF-7CE9-5179-8BDAEC250902" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7990A7A5-5233-13CB-6522-02C337129611</attributeRef>
+<attributeRef>E712E44B-05F3-1078-D0EB-71EB07A0D009</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
