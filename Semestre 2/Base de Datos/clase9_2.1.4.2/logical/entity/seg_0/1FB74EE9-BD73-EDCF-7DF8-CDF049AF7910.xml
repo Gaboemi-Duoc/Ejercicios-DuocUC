@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1FB74EE9-BD73-EDCF-7DF8-CDF049AF7910" name="EMPLEADOR">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:38:31 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rut" id="8AD788B3-4B45-F85B-8122-B2343642BAAB">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:38:38 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_razon_social" id="97BDF797-5A27-9C9F-4662-1412A26AC41B">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:38:41 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="direccion" id="E57EC194-7C65-0425-FCB2-AF6F06CE457D">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:38:53 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="comuna" id="1E08D1BA-91D3-142C-2A68-C359D0D14CC4">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:39:02 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="region" id="FC95C485-25BE-B9DA-9825-E20E3C30897E">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:39:06 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefono" id="D01C3097-2F41-D8F0-949B-19375DD8BE85">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:39:11 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="correo_electronico" id="15638D74-CD09-7753-F387-1CE302A089AA">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:39:17 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="79012DCF-7C44-BA51-1F7A-29F6F5F46580" name="EMPLEADOR PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:38:41 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8AD788B3-4B45-F85B-8122-B2343642BAAB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

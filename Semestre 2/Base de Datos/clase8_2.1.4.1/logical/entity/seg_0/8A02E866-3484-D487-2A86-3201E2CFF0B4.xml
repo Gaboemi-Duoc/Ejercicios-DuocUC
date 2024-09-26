@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8A02E866-3484-D487-2A86-3201E2CFF0B4" name="PROGRAMA_SALUD">
 <createdBy>pvespucio</createdBy>
 <createdTime>2024-09-25 14:52:29 UTC</createdTime>
-<ownerDesignName>clase7_2.1.4.1</ownerDesignName>
+<ownerDesignName>clase8_2.1.4.1</ownerDesignName>
 <engineerTo>
 <item key="E4C4DF19-30BF-7CE9-5179-8BDAEC250902" value="true"/>
 </engineerTo>
@@ -18,7 +18,17 @@
 <Attribute name="numero" id="3634460D-7272-FAB4-9171-49A974864406">
 <createdBy>pvespucio</createdBy>
 <createdTime>2024-09-25 14:52:41 UTC</createdTime>
-<ownerDesignName>clase7_2.1.4.1</ownerDesignName>
+<ownerDesignName>clase8_2.1.4.1</ownerDesignName>
+<engineerTo>
+<item key="E4C4DF19-30BF-7CE9-5179-8BDAEC250902" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="modalidad" id="9E796D28-7B05-D9BF-0BA1-83A99EE4703C">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:05:31 UTC</createdTime>
+<ownerDesignName>clase8_2.1.4.1</ownerDesignName>
 <engineerTo>
 <item key="E4C4DF19-30BF-7CE9-5179-8BDAEC250902" value="true"/>
 </engineerTo>
@@ -30,7 +40,7 @@
 <identifier id="9E7F3862-64E5-AA6C-B15D-65D9F3CEE877" name="programa_salud PK">
 <createdBy>pvespucio</createdBy>
 <createdTime>2024-09-25 14:52:46 UTC</createdTime>
-<ownerDesignName>clase7_2.1.4.1</ownerDesignName>
+<ownerDesignName>clase8_2.1.4.1</ownerDesignName>
 <engineerTo>
 <item key="E4C4DF19-30BF-7CE9-5179-8BDAEC250902" value="true"/>
 </engineerTo>

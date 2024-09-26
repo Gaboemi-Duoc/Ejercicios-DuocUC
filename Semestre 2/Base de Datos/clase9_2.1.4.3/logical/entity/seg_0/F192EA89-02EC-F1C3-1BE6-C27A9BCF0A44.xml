@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F192EA89-02EC-F1C3-1BE6-C27A9BCF0A44" name="TIPO_ASEGURADO">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:30:33 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="62E7FDF2-7D6F-14AC-F961-9EE9AA4B5A8C">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:30:44 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dependiente" id="E9EC0F82-2F57-67B9-62AC-B071814655FB">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:30:52 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pensionado" id="311C1742-3276-8453-B730-195ED32BF1DE">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:31:01 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="institucion_pagadora" id="BE536F8E-AFCB-EDCD-AD9E-C3643BA19B4A">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:31:10 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AFED0AA5-EA70-2C79-CEC2-450DC8E0C6E6" name="TIPO_ASEGURADO PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:30:48 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>62E7FDF2-7D6F-14AC-F961-9EE9AA4B5A8C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

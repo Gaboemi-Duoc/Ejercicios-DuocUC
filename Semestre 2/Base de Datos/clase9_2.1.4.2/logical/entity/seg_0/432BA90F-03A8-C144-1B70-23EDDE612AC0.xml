@@ -1,0 +1,159 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="432BA90F-03A8-C144-1B70-23EDDE612AC0" name="TRABAJADOR_SOLICITANTE">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:35:35 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rut" id="A6E6B30B-2FA6-216C-6984-F75894AED81E">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:36:02 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_completo" id="B913A312-4DFA-62AD-353D-A0D21FC7C730">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:40:19 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="edad" id="017148F0-E3BB-2252-3CF9-4F3A3D6C22C5">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:41:46 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="direccion_part_completa" id="0C6E09BC-E622-A420-8AAD-53F3CD19F7DD">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:41:51 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="comuna" id="E15544B8-C962-55CA-6C0C-E22F4F8F478B">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:42:10 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="region" id="35E3DA3D-BAAA-AB6A-3185-FBEA74305F4D">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:42:14 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefono" id="066CB760-C1DC-A899-8006-52EEE0884D38">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:42:17 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="correo_electronico" id="73A04463-16DE-2C6E-A907-4468A0F07B7E">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:42:31 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cargo" id="63B52B44-09F7-7F7F-9FEE-2487BD2909EA">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:42:44 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="otros empleadores" id="10FC7AC4-5112-8CC7-ECDA-EC10E27363EF">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:42:51 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut1" id="0BDAC110-C74B-7D40-5380-2B73C6133CA6">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:50:59 UTC</createdTime>
+<generatorID>A2EA8803-386A-4115-BD80-7357A341DF65</generatorID>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<referedAttribute>E61D3852-6B5C-89D3-6692-A99CD9323DB6</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id" id="6E7A20D5-FB6D-DE71-0C28-D3C27468EB6E">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:54:05 UTC</createdTime>
+<generatorID>04BC8155-1ECF-20C4-F2AD-83D3710EE8D3</generatorID>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<referedAttribute>94CE6FFF-EEF9-CF9A-52A3-3C0DBF6E0058</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="831933D2-979E-F882-D8EE-972D44752125" name="TRABAJADOR_SOLICITANTE PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:36:06 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A6E6B30B-2FA6-216C-6984-F75894AED81E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

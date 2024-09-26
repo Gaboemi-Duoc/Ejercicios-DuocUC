@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E71DE72E-04FB-FDE2-8EEF-ADF1C1E7165F" name="RENTA">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:48:40 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="tipo_renta" id="A7E432CC-B9DE-C885-018F-0C87F675091A">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:48:50 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="renta_bruta" id="B9E05C31-7890-52EC-9AE1-CB3A13112256">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:49:08 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="renta_liquida1" id="AD4D7DF6-BA3A-98C3-0B7F-C4C98F72D768">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:49:12 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="renta_liquida2" id="30575C85-A1DA-4835-39E8-E70F4E8D8A68">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:49:21 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="renta_liquida3" id="1C6B3D4E-B53E-89AB-B697-37F12D4C2547">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:49:22 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut" id="E61D3852-6B5C-89D3-6692-A99CD9323DB6">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:50:26 UTC</createdTime>
+<generatorID>A2EA8803-386A-4115-BD80-7357A341DF65</generatorID>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<referedAttribute>A6E6B30B-2FA6-216C-6984-F75894AED81E</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="71356544-2135-92FC-E154-0CA73E0066CA" name="RENTA PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:49:41 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E61D3852-6B5C-89D3-6692-A99CD9323DB6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7C0DB2A3-C887-A846-877A-1ED9B2CADB49" name="ASEGURADO">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:09:46 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="run" id="2966EAAE-0840-0404-1C51-842C57A676EE">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:10:19 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombres" id="8B31C278-78E5-A6FD-72CB-571065CF7EBC">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:10:22 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="apellido_pat" id="A25DE17C-23F8-C990-212B-0A14D921C42E">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:10:27 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="apellido_mat" id="4E640ECD-E5F2-4A7A-9F2A-32BD1E3BA1D2">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:10:38 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="f_nacimiento" id="CB268F08-5C1E-3BE3-E544-659A5A126301">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:10:42 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sexo" id="094CBA5D-2AB6-6664-9323-17A7DC1D85E5">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:10:50 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nacionalidad" id="D4BF99F1-C490-7112-0B15-5C145FEB0D41">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:10:52 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefono" id="5E6F6B37-69EC-A05F-004C-827ED7D14499">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:37:37 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="1DDF3A6F-2844-DAC8-93DA-EEE19E2503E6">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:37:43 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fonasa_enviar" id="03CF16E9-6125-F692-07D0-0C2AE744123F">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:37:50 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A078A1C8-EE26-0B4D-2A0C-AD0603039FB0" name="ASEGURADO PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:10:22 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2966EAAE-0840-0404-1C51-842C57A676EE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CCD09362-D44E-B17A-800C-4611F08DCF89" name="FORMULARIO">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:15:17 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="folio" id="3940AC8F-5378-B45D-3B5F-0D1C45436C19">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:15:52 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha" id="39BA7115-3257-DAA0-F452-4755DC32E005">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:15:59 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo_solicitud" id="107A277F-07F8-2226-8CE3-31902D6FBA97">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:16:04 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="run" id="2872A054-DCC5-AAED-2EF3-136E4B92BED7">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:17:11 UTC</createdTime>
+<generatorID>3FC8FECC-AE84-6D0A-F658-42F06C083FC0</generatorID>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<referedAttribute>2966EAAE-0840-0404-1C51-842C57A676EE</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id" id="6D6EB94F-8BCA-F431-305E-EC75916B5854">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:31:45 UTC</createdTime>
+<generatorID>A3497793-21E2-241A-D65B-B41180CFC012</generatorID>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<referedAttribute>62E7FDF2-7D6F-14AC-F961-9EE9AA4B5A8C</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="total_ingresos" id="CF897FC7-F64F-EE86-C862-ACE3531B6002">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:38:37 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F24B4F7B-F562-ED0A-ED40-0A7A37AC7191" name="FORMULARIO PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:15:58 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3940AC8F-5378-B45D-3B5F-0D1C45436C19</attributeRef>
+<attributeRef>2872A054-DCC5-AAED-2EF3-136E4B92BED7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

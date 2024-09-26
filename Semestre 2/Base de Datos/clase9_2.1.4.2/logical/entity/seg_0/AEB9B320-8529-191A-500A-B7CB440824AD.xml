@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AEB9B320-8529-191A-500A-B7CB440824AD" name="SOLICITUD_CREDITO">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:36:17 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="folio" id="93EA6F52-D289-6B9B-37F2-F9D0373E3B06">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:54:58 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha" id="A154B856-29A7-26DF-04A0-002611F9751F">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:03:21 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="monto" id="ABB35AF6-1048-E909-7C87-F818711E6A8A">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:36:49 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prepago" id="AD32FEA5-7219-0E69-4366-E3BA10E669DA">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:36:52 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="plazo" id="E8194CCC-37D7-536E-9324-795C0781524B">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:36:58 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut" id="E914402D-F95E-BECE-4720-3315F041DD6B">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:47:29 UTC</createdTime>
+<generatorID>58280CB7-FFC9-90ED-DE35-11487DE705CC</generatorID>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<referedAttribute>8AD788B3-4B45-F85B-8122-B2343642BAAB</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut1" id="7200674B-EC9A-F672-F95E-D6E4A4CF1B44">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:47:50 UTC</createdTime>
+<generatorID>50E1E695-BF58-99B0-1DA3-0921432E363D</generatorID>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<referedAttribute>A6E6B30B-2FA6-216C-6984-F75894AED81E</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="folio1" id="6A5B751E-CCD3-21B2-8017-4EA2FA1DB189">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:39:43 UTC</createdTime>
+<generatorID>46E7634B-2CBC-045F-9572-83F6AC051F69</generatorID>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<referedAttribute>B83B022D-C486-89DD-15A2-2B661184887C</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D42AD934-1517-BA05-EE66-003B34D97D5B" name="SOLICITUD_CREDITO PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 17:47:50 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.2</ownerDesignName>
+<engineerTo>
+<item key="2D5EDCC6-33B4-DF12-22AF-EE174F8BC8C6" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7200674B-EC9A-F672-F95E-D6E4A4CF1B44</attributeRef>
+<attributeRef>93EA6F52-D289-6B9B-37F2-F9D0373E3B06</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F59258A4-5B5C-B8A9-1672-C7BA803BB45B" name="ESTABLECIMIENTO_SALUD">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:34:56 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cual" id="68EC48CC-7F8B-7145-D33A-628D988861E3">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:35:13 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="comuna" id="6B348190-0A82-0780-B3F7-235D713EAD86">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:35:39 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="region" id="C4594AFE-1D59-C0A0-681E-4EB43B4F3F17">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:35:46 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="folio" id="E40CC51C-E28C-0C1B-DC66-B11B1C94B4C0">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:36:16 UTC</createdTime>
+<generatorID>27892311-7325-7AD2-C282-7B9DB0B998F6</generatorID>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<referedAttribute>3940AC8F-5378-B45D-3B5F-0D1C45436C19</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="run" id="9AD95A81-5F65-0C96-E267-97EEFB4D589D">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:36:16 UTC</createdTime>
+<generatorID>27892311-7325-7AD2-C282-7B9DB0B998F6</generatorID>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<referedAttribute>2872A054-DCC5-AAED-2EF3-136E4B92BED7</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="70A7B890-F3D5-3FF1-6A90-658BB4385CD5" name="ESTABLECIMIENTO_SALUD PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:35:33 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>68EC48CC-7F8B-7145-D33A-628D988861E3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

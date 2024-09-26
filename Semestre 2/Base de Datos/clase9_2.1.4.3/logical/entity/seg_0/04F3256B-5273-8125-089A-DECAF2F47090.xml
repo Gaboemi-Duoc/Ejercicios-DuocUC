@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="04F3256B-5273-8125-089A-DECAF2F47090" name="CARGAS_FAMILIARES">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:27:17 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="run" id="8031D243-86C4-C02B-6245-8F1897A95AF4">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:27:25 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="apellidos" id="6D220B01-C857-1231-0588-262A2767F313">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:27:28 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombres" id="5942C7CD-4011-E6E7-A76F-6C45645C6018">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:27:37 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="f_nacimiento" id="3980D4B9-7929-D84A-35D8-719E0EAA04BD">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:27:41 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sexo" id="E3A81FDB-FBB7-3D95-5C21-5A93D587ED32">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:27:48 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="parentesco" id="4CEC3A07-6E1D-B511-B9B8-B08F8883D967">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:28:35 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_movimiento" id="B38DEB79-9535-C875-0ED5-3C56A0EC4455">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:28:40 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="284A88E8-5F01-1B3C-DF74-BF207224BD5F" name="CARGAS_FAMILIARES PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-09-26 18:27:27 UTC</createdTime>
+<ownerDesignName>clase9_2.1.4.3</ownerDesignName>
+<engineerTo>
+<item key="524FA774-CAFF-51C2-317C-2729BBE97C2C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8031D243-86C4-C02B-6245-8F1897A95AF4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
