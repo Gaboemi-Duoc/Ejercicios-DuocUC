@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3D1AFD32-D414-AFA4-3EBF-A2B73586AE1A" name="DETALLE_BOLETA">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-02 15:28:21 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_boleta" id="9F7C1A00-3376-BB9A-606C-0718E8B2197B">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-02 15:29:30 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FCFE8AA6-8EB4-8AEF-B096-5B59826A3C3B" referredColumn="1B67F991-58C1-1A42-34F7-36FCC15BE018"/>
+</associations>
+</Column>
+<Column name="id_producto" id="BA1A36AE-422C-D3F1-B223-BBAD70496E54">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-02 15:30:37 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="10290833-528D-88A6-F324-DC23F5E05BDD" referredColumn="0E7F4862-94BF-4F04-AD0A-C5B30FB2697E"/>
+</associations>
+</Column>
+<Column name="cantidad" id="3826C9F4-EC6F-E561-D85B-DC825711992F">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-02 15:28:53 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3F72F014-C48A-8762-BD71-E6F2EDFED792" name="DETALLE_BOLETA_PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-02 15:29:51 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F7C1A00-3376-BB9A-606C-0718E8B2197B"/>
+<colUsage columnID="BA1A36AE-422C-D3F1-B223-BBAD70496E54"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C6FF9740-8FF9-ED20-3792-2D018792DF0A" name="DETALLE_BOLETA_BOLETA_FK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-02 15:29:30 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F7C1A00-3376-BB9A-606C-0718E8B2197B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="11BE3FF3-A829-5CA4-2274-B94E4C1CA134" name="DETALLE_BOLETA_PRODUCTO_FK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-02 15:30:37 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA1A36AE-422C-D3F1-B223-BBAD70496E54"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

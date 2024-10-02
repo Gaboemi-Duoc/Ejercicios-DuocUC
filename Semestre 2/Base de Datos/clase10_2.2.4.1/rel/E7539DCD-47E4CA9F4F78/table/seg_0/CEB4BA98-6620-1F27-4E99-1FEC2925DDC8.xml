@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CEB4BA98-6620-1F27-4E99-1FEC2925DDC8" name="CLIENTE">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-02 15:07:08 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_cliente" id="C7A6A513-0033-21E1-A034-C1C7BEB71769">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-02 15:16:32 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_cliente" id="07D9A986-76C1-10F7-7A16-69757F9CED2E">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-02 15:16:32 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35</dataTypeSize>
+<ownDataTypeParameters>35,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direccion" id="A26E2111-B054-765E-B843-967BF9677F7F">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-02 15:16:32 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fono" id="CB1162A0-E1FD-63E1-D585-860215DCBB83">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-02 15:16:32 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_comuna" id="AF7D6F0E-14D7-EC7F-2554-A4EC24F45666">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-02 15:16:32 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="40CADD1B-F568-9F69-6E6E-18E31B60CC28" name="CLIENTE_PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-02 15:16:32 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7A6A513-0033-21E1-A034-C1C7BEB71769"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

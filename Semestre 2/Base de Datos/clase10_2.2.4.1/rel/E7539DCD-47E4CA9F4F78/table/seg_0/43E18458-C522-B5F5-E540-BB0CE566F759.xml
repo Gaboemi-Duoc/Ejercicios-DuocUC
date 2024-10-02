@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="43E18458-C522-B5F5-E540-BB0CE566F759" name="FABRICA">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-02 15:24:37 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_fabrica" id="11B26221-5047-9FD5-4C2C-A344C8486055">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-02 15:25:12 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="98750677-67D1-CF04-8CD3-B25890270955">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-02 15:25:12 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="93E93723-D1A0-0590-818E-5B3F6534390E" name="FABRICA_PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-02 15:25:12 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11B26221-5047-9FD5-4C2C-A344C8486055"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

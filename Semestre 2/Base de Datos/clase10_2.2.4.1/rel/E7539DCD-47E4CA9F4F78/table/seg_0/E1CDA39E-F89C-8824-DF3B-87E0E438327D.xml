@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E1CDA39E-F89C-8824-DF3B-87E0E438327D" name="PRODUCTO">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-02 15:23:08 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_producto" id="0E7F4862-94BF-4F04-AD0A-C5B30FB2697E">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-02 15:24:30 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="7D5F0263-E161-DD94-2021-5AF989BB722F">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-02 15:24:30 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="precio" id="BA7F1B84-879F-EA66-BBC2-A0C4D6CF5D9D">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-02 15:24:30 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stock_actual" id="B86D803F-D3F5-91BF-0931-068A71F3A4FB">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-02 15:24:30 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stock_minimo" id="8735359B-AB48-DA10-2457-0EC88501A887">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-02 15:24:30 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FABRICA_id_fabrica" id="A035F177-9899-AEB5-F5BF-EE291B561A42">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-02 15:25:53 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="993437C7-D40E-0022-CA20-FADC7BC6D51C" referredColumn="11B26221-5047-9FD5-4C2C-A344C8486055"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="57AD7CE0-ADF3-FC43-5129-8B36EFC918D3" name="PRODUCTO_PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-02 15:24:30 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E7F4862-94BF-4F04-AD0A-C5B30FB2697E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="28AA2F19-9C41-26E4-CA1F-2902248ADB5D" name="PRODUCTO_FABRICA_FK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-02 15:25:53 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A035F177-9899-AEB5-F5BF-EE291B561A42"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

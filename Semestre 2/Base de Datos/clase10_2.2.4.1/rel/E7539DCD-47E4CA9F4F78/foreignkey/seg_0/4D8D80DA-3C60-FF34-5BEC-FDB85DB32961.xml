@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4D8D80DA-3C60-FF34-5BEC-FDB85DB32961" containerWithKeyObject="22C87D1C-0AF6-7C80-7C08-3B4C570746BA" localFKIndex="3A21C995-33DC-CD8A-83FE-73119FB43858" name="EMPLEADO_CATEGORIZACION_FK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-02 15:34:42 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<referredTableLongName>CATEGORIZACION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>41737266-A8C6-35A4-BA6F-F9F730815779</referredTableID>
+<keyObject>E7F4F31F-E252-863D-EC8C-C37EB7F5E439</keyObject>
+<referredKeyID>E7F4F31F-E252-863D-EC8C-C37EB7F5E439</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_categorizacion</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

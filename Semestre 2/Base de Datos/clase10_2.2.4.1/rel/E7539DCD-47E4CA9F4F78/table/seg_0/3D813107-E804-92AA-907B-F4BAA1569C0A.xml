@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3D813107-E804-92AA-907B-F4BAA1569C0A" name="EQUIPO">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-02 15:31:35 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_equipo" id="BE523DDD-C51F-7A24-3A3B-D168DED567EC">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-02 15:32:23 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="CBE0F714-FCFA-5267-25E7-D2274043865B">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-02 15:32:23 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="porcentaje" id="910D69E2-12D4-A893-DC5E-70A467578231">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-02 15:32:23 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5A429656-57BC-FE66-7196-831C748D59ED" name="EQUIPO_PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-02 15:32:23 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE523DDD-C51F-7A24-3A3B-D168DED567EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
