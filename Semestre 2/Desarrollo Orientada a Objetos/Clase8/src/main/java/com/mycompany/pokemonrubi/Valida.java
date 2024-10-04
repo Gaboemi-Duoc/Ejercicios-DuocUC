@@ -8,7 +8,7 @@ import static com.mycompany.pokemonrubi.PokemonRubi.leer;
 
 /**
  *
- * @author pvespucio
+ * @author Gabo's
  */
 public class Valida {
 	

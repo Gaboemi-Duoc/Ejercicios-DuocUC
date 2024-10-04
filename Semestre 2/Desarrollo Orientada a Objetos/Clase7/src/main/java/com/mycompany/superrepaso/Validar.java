@@ -6,7 +6,7 @@ package com.mycompany.superrepaso;
 import static com.mycompany.superrepaso.SuperRepaso.sc;
 /**
  *
- * @author pvespucio
+ * @author Gabo's
  */
 public class Validar {
        public static int validar_int(){

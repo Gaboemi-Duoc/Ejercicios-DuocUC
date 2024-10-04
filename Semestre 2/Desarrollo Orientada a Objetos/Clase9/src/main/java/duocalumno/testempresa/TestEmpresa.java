@@ -6,7 +6,7 @@ package duocalumno.testempresa;
 
 /**
  *
- * @author pvespucio
+ * @author Gabo's
  */
 public class TestEmpresa {
 

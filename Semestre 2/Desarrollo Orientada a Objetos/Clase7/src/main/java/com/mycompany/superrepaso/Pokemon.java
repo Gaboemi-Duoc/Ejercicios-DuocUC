@@ -6,7 +6,7 @@ package com.mycompany.superrepaso;
 
 /**
  *
- * @author pvespucio
+ * @author Gabo's
  */
 public class Pokemon {
     String nombre, tipo ;

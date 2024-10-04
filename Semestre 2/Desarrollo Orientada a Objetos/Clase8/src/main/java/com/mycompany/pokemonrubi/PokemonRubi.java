@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author pvespucio
+ * @author Gabo's
  */
 public class PokemonRubi {
 	static Scanner leer =new Scanner(System.in);

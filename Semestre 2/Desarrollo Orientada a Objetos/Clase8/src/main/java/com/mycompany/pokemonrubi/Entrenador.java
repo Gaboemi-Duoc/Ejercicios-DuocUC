@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author pvespucio
+ * @author Gabo's
  */
 public class Entrenador {
 	String nombre, genero;

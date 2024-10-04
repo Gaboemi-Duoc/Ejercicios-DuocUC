@@ -6,7 +6,7 @@ package com.mycompany.pokemonrubi;
 
 /**
  *
- * @author pvespucio
+ * @author Gabo's
  */
 public class Pokemon {
 	String nombre;

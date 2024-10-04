@@ -8,7 +8,7 @@ import java.lang.Math;
 
 /**
  *
- * @author pvespucio
+ * @author Gabo's
  */
 public class SuperRepaso {
     static Scanner sc =new Scanner(System.in);
