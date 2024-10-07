@@ -22,6 +22,14 @@ public class Electronico extends Producto {
 		this.marca = marca;
 		this.garantiaMeses = garantiaMeses;
 	}
-	
-	
+
+	@Override
+	public String getNombre() {
+		return marca + " " + super.getNombre();
+	}
+
+	@Override
+	public String toString() {
+		return "\n" +idProducto + " " +  marca + " " + nombre + " | Precio = " + precio;
+	}
 }

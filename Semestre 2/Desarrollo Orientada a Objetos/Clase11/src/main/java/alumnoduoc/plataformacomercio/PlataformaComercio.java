@@ -17,8 +17,8 @@ public class PlataformaComercio {
 	static ArrayList<Cliente> clientes = new ArrayList<>();
 	static Producto[] ventaProductos = {
 		new Electronico("Sony", 6, "E1-S", "WalkMan", 80000),
-		new Electronico("Samsung", 12, "E1-S", "Samsung SmartTV", 500000),
-		new Electronico("Samsung", 8, "E2-S", "Samsung SmartPhone", 450000),
+		new Electronico("Samsung", 12, "E1-S", "SmartTV", 500000),
+		new Electronico("Samsung", 8, "E2-S", "SmartPhone", 450000),
 		new Ropa(null, null, "R1", "Camisa", 25000),
 		new Ropa(null, null, "R2", "Pantalon", 30000),
 		new Ropa(null, null, "R3", "Chaqueta", 45000),
@@ -35,15 +35,21 @@ public class PlataformaComercio {
 			System.out.println("1. Ingresar Cliente");
 			System.out.println("2. Crear Pedido");
 			System.out.println("3. Revisar Pedidos");
+			System.out.println(FINAL_OPTION + ". Salir");
+			System.out.println("Ingrese una Opcion: ");
+			System.out.print("> ");
 			option = validaInt();
 			switch (option) {
 				case 1:
+					System.out.println("Ingresando Cliente:");
 					ingresarCliente();
 					break;
 				case 2:
+					System.out.println("Creacion de Pedido:");
 					crearPedido();
 					break;
 				case 3:
+					System.out.println("Revision de Pedidos:");
 					revisarPedidos();
 					break;
 				case FINAL_OPTION:
@@ -57,33 +63,44 @@ public class PlataformaComercio {
 	}
 
 	static void ingresarCliente() {
-		if (clientes.size() == 0) {
+		if (clientes.isEmpty()) {
 			actualCliente = crearCliente();
 		} else {
 			boolean notSelected = true;
 			while (notSelected) {
 				for (Cliente cliente : clientes) {
 					System.out.println(cliente.getIdCliente() + ". " + cliente.getNombre());
-
 				}
-				String selection = leer.next();
-				for (Cliente cliente : clientes) {
-					System.out.println(cliente.getIdCliente() + ". " + cliente.getNombre());
-					if (selection == cliente.getIdCliente()) {
-						actualCliente = cliente;
-						notSelected = false;
+				System.out.println("Ingrese el numero Cliente, si quiere crear un cliente ingrese -1: ");
+				System.out.print("> ");
+				int selection = validaInt();
+				if (-1 == selection) {
+					actualCliente = crearCliente();
+					notSelected = false;
+				} else {
+					for (Cliente cliente : clientes) {
+						System.out.println(cliente.getIdCliente() + ". " + cliente.getNombre());
+						if (Integer.toString(selection).equals(cliente.getIdCliente())) {
+							actualCliente = cliente;
+							notSelected = false;
+						}
 					}
-				}
-				if (notSelected) {
-					System.out.println("Ingrese una opcion valida...");
+					if (notSelected) {
+						System.out.println("Ingrese una opcion valida...");
+					}
 				}
 			}
 		}
 	}
 	static Cliente crearCliente() {
+		System.out.println("Ingrese el Nombre del Cliente: ");
+		System.out.print("> ");
 		String name = leer.next();
-		String idCliente = "C" + (clientes.size()+1);
-		return new Cliente(idCliente, name);
+		String idCliente = String.valueOf(clientes.size()+1);
+		Cliente returnCliente = new Cliente(idCliente, name);
+		clientes.add(returnCliente);
+		System.out.println("Creado Cliente " + returnCliente.getNombre() + " N°" + returnCliente.getIdCliente());
+		return returnCliente;
 	}
 
 	static void crearPedido() {
@@ -102,24 +119,39 @@ public class PlataformaComercio {
 				comprando = false;
 			}
 			else if (seleccion > 0 && seleccion <= ventaProductos.length ) {
-				Producto productoSeleccionado = ventaProductos[seleccion];
+				Producto productoSeleccionado = ventaProductos[seleccion-1];
 				if (productoSeleccionado.getClass() == Ropa.class) {
-					System.out.println("!!");
+					System.out.println("Ingrese la Talla deseada: ");
+					System.out.print("> ");
+					String talla = leer.next();
+					System.out.println("Ingrese el Color que deseada: ");
+					System.out.print("> ");
+					String color = leer.next();
+					Ropa subProducto = new Ropa(talla, color, productoSeleccionado);
+					productos.add(subProducto);
+				} else {
+					productos.add(productoSeleccionado);
 				}
 
-				productos.add(ventaProductos[seleccion]);
-				System.out.println("Producto " + ventaProductos[seleccion].getNombre() + " ha sido agregado al pedido exitosamente");
+				System.out.println("Producto " + productoSeleccionado.getNombre() + " ha sido agregado al pedido exitosamente");
 			} else {
 				System.out.println("Seleccion no Valida!");
 			}
 
 		}
 
-		actualCliente.pedidosRealizados.add(new Pedido(productos));
+		actualCliente.addPedidosRealizados(new Pedido(productos));
+		System.out.println("Pedido Realizado Exitosamente!");
 	}
 	static void revisarPedidos() {
-		for (Pedido pedido : actualCliente.getPedidosRealizados()) {
-			System.out.println(pedido);
+		if (actualCliente != null) {
+			int i = 1;
+			for (Pedido pedido : actualCliente.getPedidosRealizados()) {
+				System.out.println(i + "." + pedido);
+				i += 1;
+			}
+		} else {
+			System.out.println("No hay un Cliente Ingresado, porfavor ingrese un Cliente...");
 		}
 	}
 	

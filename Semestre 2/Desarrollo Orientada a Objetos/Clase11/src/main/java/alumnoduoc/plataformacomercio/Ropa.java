@@ -21,9 +21,14 @@ public class Ropa extends Producto {
 		this.color = color;
 	}
 	
-	public Ropa(Producto producto) {
+	public Ropa(String talla, String color, Producto producto) {
 		super(producto.getIdProducto(), producto.getNombre(), producto.getPrecio());
 		this.talla = null;
 		this.color = null;
+	}
+	
+	@Override
+	public String toString() {
+		return "\n" +idProducto + " " + nombre + " " + color +  " Talla " + talla + " | Precio = " + precio;
 	}
 }

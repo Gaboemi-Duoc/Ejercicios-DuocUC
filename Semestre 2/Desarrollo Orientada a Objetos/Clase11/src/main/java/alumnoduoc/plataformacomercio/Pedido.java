@@ -22,6 +22,11 @@ public class Pedido {
 	}
 
 	public double calcularTotal() {
+		double newTotal = 0;
+		for (Producto producto : productos) {
+			newTotal += producto.getPrecio();
+		}
+		this.total = newTotal;
 		return total;
 	}
 
@@ -31,7 +36,7 @@ public class Pedido {
 
 	@Override
 	public String toString() {
-		return "Pedido{" + "productos=" + productos + ", total=" + total + '}';
+		return "Pedido productos=" + productos + "\nTotal Pedido = " + total;
 	}
 	
 	
