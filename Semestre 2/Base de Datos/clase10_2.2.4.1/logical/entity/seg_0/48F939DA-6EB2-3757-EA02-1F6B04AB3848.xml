@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="48F939DA-6EB2-3757-EA02-1F6B04AB3848" name="CLIENTE">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 15:16:00 UTC</createdTime>
+<generatorID>CEB4BA98-6620-1F27-4E99-1FEC2925DDC8</generatorID>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<engineerTo>
+<item key="E7539DCD-3A3E-A4BB-68CE-47E4CA9F4F78" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id cliente" id="CB3D1897-E399-A9DC-C92F-418672E160C3">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 15:16:00 UTC</createdTime>
+<generatorID>C7A6A513-0033-21E1-A034-C1C7BEB71769</generatorID>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<engineerTo>
+<item key="E7539DCD-3A3E-A4BB-68CE-47E4CA9F4F78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre cliente" id="61891186-E4E6-966A-2845-D6AA92D573A8">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 15:16:00 UTC</createdTime>
+<generatorID>07D9A986-76C1-10F7-7A16-69757F9CED2E</generatorID>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<engineerTo>
+<item key="E7539DCD-3A3E-A4BB-68CE-47E4CA9F4F78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35</dataTypeSize>
+<ownDataTypeParameters>35,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="direccion" id="7A00E15D-6659-4CA0-C963-7F3525CA65CF">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 15:16:00 UTC</createdTime>
+<generatorID>A26E2111-B054-765E-B843-967BF9677F7F</generatorID>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<engineerTo>
+<item key="E7539DCD-3A3E-A4BB-68CE-47E4CA9F4F78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fono" id="72E226EB-FBDA-BEAA-D339-3205D39CBED7">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 15:16:00 UTC</createdTime>
+<generatorID>CB1162A0-E1FD-63E1-D585-860215DCBB83</generatorID>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<engineerTo>
+<item key="E7539DCD-3A3E-A4BB-68CE-47E4CA9F4F78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id comuna" id="8107402A-1A95-16BF-B58D-819340E1E337">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 15:16:00 UTC</createdTime>
+<generatorID>C60EFAC1-D947-3319-4815-D44BB58A6B43</generatorID>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<engineerTo>
+<item key="E7539DCD-3A3E-A4BB-68CE-47E4CA9F4F78" value="true"/>
+</engineerTo>
+<referedAttribute>4360042C-084E-B385-EFD4-9DD9EF1BA3DE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0AF6BA62-D2AA-57FF-7D86-ABCEEB9253B1" name="CLIENTE PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 15:16:00 UTC</createdTime>
+<generatorID>40CADD1B-F568-9F69-6E6E-18E31B60CC28</generatorID>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E7539DCD-3A3E-A4BB-68CE-47E4CA9F4F78" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CB3D1897-E399-A9DC-C92F-418672E160C3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

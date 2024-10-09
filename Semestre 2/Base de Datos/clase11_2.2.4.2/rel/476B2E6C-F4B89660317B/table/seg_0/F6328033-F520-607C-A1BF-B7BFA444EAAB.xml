@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F6328033-F520-607C-A1BF-B7BFA444EAAB" name="FACTURA">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:18:52 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_factura" id="7EDA341B-B025-EA49-2D27-7D21528223ED">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:19:23 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_cliente" id="9504C3FF-06D6-EFF1-3D3C-6C49A5F08A21">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:19:40 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F80F6F67-79E2-91BE-A0A4-1D3791A927B8" referredColumn="76969475-C715-10C4-17CB-13F822F14B39"/>
+</associations>
+</Column>
+<Column name="id_vendedor" id="816B23DE-7817-DFF9-CF69-37DDB1F13D23">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:19:27 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2E11A0F6-5ACB-250D-992B-EA2333D1E430" referredColumn="BAC23202-7625-09D6-601E-CC951B14BA26"/>
+</associations>
+</Column>
+<Column name="fecha" id="F4454D4F-D8B3-272C-179F-5251216BBD13">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:19:23 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CEAD6388-C8D1-314B-AE1F-5EFF60374574" name="FACTURA_PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:19:23 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7EDA341B-B025-EA49-2D27-7D21528223ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B07462DC-FCA0-7217-7093-3B2AC5380888" name="FACTURA_VENDEDOR_FK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:19:27 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="816B23DE-7817-DFF9-CF69-37DDB1F13D23"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="57EFAF7C-37E5-36D5-DB1C-5F3C09C49779" name="FACTURA_CLIENTE_FK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:19:40 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9504C3FF-06D6-EFF1-3D3C-6C49A5F08A21"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

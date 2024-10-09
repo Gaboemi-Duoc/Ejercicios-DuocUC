@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="42099629-1426-3818-5BFF-B7346469A0B1" name="CATEGORIA">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:14:44 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_categoria" id="E6DEDED6-BA18-DEBE-4869-6B01F8733E44">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:15:08 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="2CD23D38-2FC4-A948-0FE7-5555AF0E08B0">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:15:08 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="porcentaje" id="55A0679C-AB04-7908-A235-97E374D60EA0">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:15:08 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="779CE08C-E440-33E3-19B3-629946FE78A1" name="CATEGORIA_PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:15:22 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6DEDED6-BA18-DEBE-4869-6B01F8733E44"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -64,7 +64,7 @@
 <ownDataTypeParameters>,4,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="FABRICA_id_fabrica" id="A035F177-9899-AEB5-F5BF-EE291B561A42">
+<Column name="id_fabrica" id="A035F177-9899-AEB5-F5BF-EE291B561A42">
 <createdBy>pvespucio</createdBy>
 <createdTime>2024-10-02 15:25:53 UTC</createdTime>
 <ownerDesignName>clase10_2.2.4.1</ownerDesignName>

@@ -4,7 +4,7 @@
 <createdTime>2024-10-02 15:29:30 UTC</createdTime>
 <ownerDesignName>clase10_2.2.4.1</ownerDesignName>
 <referredTableLongName>BOLETA</referredTableLongName>
-<deleteRule>NO ACTION</deleteRule>
+<deleteRule>CASCADE</deleteRule>
 <referredTableID>6330B952-CEFA-D56F-7132-E0D6047EFC5C</referredTableID>
 <keyObject>3F52A6CB-1656-48CE-0EEA-E0AD073AEEA8</keyObject>
 <referredKeyID>3F52A6CB-1656-48CE-0EEA-E0AD073AEEA8</referredKeyID>

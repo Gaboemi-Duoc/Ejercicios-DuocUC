@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CLIENTE_COMUNA_FK" directorySegmentName="seg_0" id="C60EFAC1-D947-3319-4815-D44BB58A6B43">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 15:16:00 UTC</createdTime>
+<generatorID>7135750D-18A0-3B90-5933-E5919446F06D</generatorID>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<engineerTo>
+<item key="E7539DCD-3A3E-A4BB-68CE-47E4CA9F4F78" value="true"/>
+</engineerTo>
+<sourcePk>FB9D9E27-2D80-A4AB-CF5C-C4C1E93B1DC3</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>BCA7E5B5-57F7-2D3D-3812-394DF1C66EFA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>48F939DA-6EB2-3757-EA02-1F6B04AB3848</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

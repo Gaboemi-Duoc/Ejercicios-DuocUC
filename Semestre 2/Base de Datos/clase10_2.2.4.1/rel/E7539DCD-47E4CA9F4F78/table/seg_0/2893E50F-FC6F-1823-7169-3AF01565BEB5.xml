@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2893E50F-FC6F-1823-7169-3AF01565BEB5" name="CONTRATO">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 15:00:27 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_contrato" id="9E0C009D-5615-7EF6-D29F-1BB87DAEA148">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 15:00:58 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_contrato" id="CCD099DB-C982-B50C-C43E-BBA0E3F5957A">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 15:01:12 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sueldo" id="87822923-FC66-D850-F1FF-8C8D3B2A1742">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 15:01:12 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comision" id="32664FBF-22C1-7C82-6401-85DD60C40782">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 15:01:12 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_empleado" id="60DFBFCF-FF5A-71A8-6B74-F8AE700778D3">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 15:16:25 UTC</createdTime>
+<generatorID>E3DDEE33-CC13-45C1-6AB1-374CF904C81B</generatorID>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FDBBD182-7CE5-6746-4FDE-F2CCE388652B" referredColumn="3D7784F2-C2D1-C5E5-67B4-B630B05CE564"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="207C44E5-1108-3830-E80D-AF395BF50D41" name="CONTRATO_PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 15:00:58 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E0C009D-5615-7EF6-D29F-1BB87DAEA148"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="29128E23-0BA0-C361-D1E6-4F11DA274FF1" name="CONTRATO__IDX">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 15:16:25 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>13AF028A-25B5-6361-52C7-AFBF44D22085</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="60DFBFCF-FF5A-71A8-6B74-F8AE700778D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2FF8E64B-6AAC-83F6-DC0E-223772F8025A" name="CONTRATO_EMPLEADO_FK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 15:16:25 UTC</createdTime>
+<generatorID>13AF028A-25B5-6361-52C7-AFBF44D22085</generatorID>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="60DFBFCF-FF5A-71A8-6B74-F8AE700778D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

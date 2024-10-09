@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F15270BF-45B3-8F9B-9786-9F74DADAF785" name="CONTRATO">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 15:16:00 UTC</createdTime>
+<generatorID>2893E50F-FC6F-1823-7169-3AF01565BEB5</generatorID>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<engineerTo>
+<item key="E7539DCD-3A3E-A4BB-68CE-47E4CA9F4F78" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id contrato" id="46A62A03-7A2F-4511-D0C8-7A43376A13DD">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 15:16:00 UTC</createdTime>
+<generatorID>9E0C009D-5615-7EF6-D29F-1BB87DAEA148</generatorID>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<engineerTo>
+<item key="E7539DCD-3A3E-A4BB-68CE-47E4CA9F4F78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha contrato" id="E29B7143-86A2-D7D9-7FB2-688A94A29100">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 15:16:00 UTC</createdTime>
+<generatorID>CCD099DB-C982-B50C-C43E-BBA0E3F5957A</generatorID>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<engineerTo>
+<item key="E7539DCD-3A3E-A4BB-68CE-47E4CA9F4F78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sueldo" id="CEDD797F-6A67-DAE9-BD9B-03C7DF131708">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 15:16:00 UTC</createdTime>
+<generatorID>87822923-FC66-D850-F1FF-8C8D3B2A1742</generatorID>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<engineerTo>
+<item key="E7539DCD-3A3E-A4BB-68CE-47E4CA9F4F78" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="comision" id="CDCB447F-F0C1-DDD5-82C3-B75011AC56DB">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 15:16:00 UTC</createdTime>
+<generatorID>32664FBF-22C1-7C82-6401-85DD60C40782</generatorID>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<engineerTo>
+<item key="E7539DCD-3A3E-A4BB-68CE-47E4CA9F4F78" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id empleado" id="E3DDEE33-CC13-45C1-6AB1-374CF904C81B">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 15:16:16 UTC</createdTime>
+<generatorID>13AF028A-25B5-6361-52C7-AFBF44D22085</generatorID>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<engineerTo>
+<item key="E7539DCD-3A3E-A4BB-68CE-47E4CA9F4F78" value="true"/>
+</engineerTo>
+<referedAttribute>3B444800-481F-BA7D-5CA1-A76D3EBC459C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="16FBC14F-AC92-D084-3CC8-EC6492AE0C07" name="CONTRATO PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 15:16:00 UTC</createdTime>
+<generatorID>207C44E5-1108-3830-E80D-AF395BF50D41</generatorID>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E7539DCD-3A3E-A4BB-68CE-47E4CA9F4F78" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>46A62A03-7A2F-4511-D0C8-7A43376A13DD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

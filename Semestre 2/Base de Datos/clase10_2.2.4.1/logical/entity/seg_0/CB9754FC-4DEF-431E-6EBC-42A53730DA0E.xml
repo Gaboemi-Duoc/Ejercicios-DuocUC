@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CB9754FC-4DEF-431E-6EBC-42A53730DA0E" name="EQUIPO">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 15:16:00 UTC</createdTime>
+<generatorID>3D813107-E804-92AA-907B-F4BAA1569C0A</generatorID>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<engineerTo>
+<item key="E7539DCD-3A3E-A4BB-68CE-47E4CA9F4F78" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id equipo" id="29F6E5AE-C982-E5CF-7E61-44A8E921724A">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 15:16:00 UTC</createdTime>
+<generatorID>BE523DDD-C51F-7A24-3A3B-D168DED567EC</generatorID>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<engineerTo>
+<item key="E7539DCD-3A3E-A4BB-68CE-47E4CA9F4F78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="1018970C-A660-E7C2-1C00-85FCB67E67CE">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 15:16:00 UTC</createdTime>
+<generatorID>CBE0F714-FCFA-5267-25E7-D2274043865B</generatorID>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<engineerTo>
+<item key="E7539DCD-3A3E-A4BB-68CE-47E4CA9F4F78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="porcentaje" id="5CDE0259-4C47-FEDC-B6D4-6FAE0062D4FB">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 15:16:00 UTC</createdTime>
+<generatorID>910D69E2-12D4-A893-DC5E-70A467578231</generatorID>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<engineerTo>
+<item key="E7539DCD-3A3E-A4BB-68CE-47E4CA9F4F78" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="ECBCC5E5-0C8F-C465-5A8E-9936096DFAB8" name="EQUIPO PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 15:16:00 UTC</createdTime>
+<generatorID>5A429656-57BC-FE66-7196-831C748D59ED</generatorID>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E7539DCD-3A3E-A4BB-68CE-47E4CA9F4F78" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>29F6E5AE-C982-E5CF-7E61-44A8E921724A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

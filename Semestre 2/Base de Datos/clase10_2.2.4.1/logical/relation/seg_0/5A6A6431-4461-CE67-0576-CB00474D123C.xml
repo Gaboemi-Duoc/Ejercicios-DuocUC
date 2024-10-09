@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="EMPLEADO_CATEGORIZACION_FK" directorySegmentName="seg_0" id="5A6A6431-4461-CE67-0576-CB00474D123C">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 15:16:00 UTC</createdTime>
+<generatorID>4D8D80DA-3C60-FF34-5BEC-FDB85DB32961</generatorID>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<engineerTo>
+<item key="E7539DCD-3A3E-A4BB-68CE-47E4CA9F4F78" value="true"/>
+</engineerTo>
+<sourcePk>032155AC-4B87-D881-81EB-97704E8D287E</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B7B204EA-173B-3A2B-88FC-E332D999E549</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>41EA44BB-010F-D24A-2141-8CEF5F584E85</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

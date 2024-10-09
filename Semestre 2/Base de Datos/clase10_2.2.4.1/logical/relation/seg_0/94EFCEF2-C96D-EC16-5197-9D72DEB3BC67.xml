@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="DETALLE_BOLETA_PRODUCTO_FK" directorySegmentName="seg_0" id="94EFCEF2-C96D-EC16-5197-9D72DEB3BC67">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 15:16:00 UTC</createdTime>
+<generatorID>10290833-528D-88A6-F324-DC23F5E05BDD</generatorID>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<engineerTo>
+<item key="E7539DCD-3A3E-A4BB-68CE-47E4CA9F4F78" value="true"/>
+</engineerTo>
+<sourcePk>242FD058-0A61-FB74-B53E-380535DC6F96</sourcePk>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FF151AD4-75DC-0187-24C2-615E9741F1FE</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3CFFB900-5BF6-6FE4-8BDC-25464DE18EE4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

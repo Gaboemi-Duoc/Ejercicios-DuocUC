@@ -51,16 +51,19 @@
 <ownDataTypeParameters>,9,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="id_comuna" id="AF7D6F0E-14D7-EC7F-2554-A4EC24F45666">
+<Column name="id_comuna" id="473ACFAB-39D4-44C4-9A07-06ECEDED1166">
 <createdBy>pvespucio</createdBy>
-<createdTime>2024-10-02 15:16:32 UTC</createdTime>
+<createdTime>2024-10-09 14:34:27 UTC</createdTime>
 <ownerDesignName>clase10_2.2.4.1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>25</dataTypeSize>
-<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7135750D-18A0-3B90-5933-E5919446F06D" referredColumn="147A0A63-9791-E416-B288-1624A8597B60"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -73,6 +76,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="C7A6A513-0033-21E1-A034-C1C7BEB71769"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="745B074D-3D06-6F3E-EBC1-F0894977646C" name="CLIENTE_COMUNA_FK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:34:27 UTC</createdTime>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="473ACFAB-39D4-44C4-9A07-06ECEDED1166"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

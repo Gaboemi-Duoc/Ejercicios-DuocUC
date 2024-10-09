@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="89CB663B-6EA3-975A-5BB7-49169118ED4E" name="DETALLE_FACTURA">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:21:26 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_factura" id="C919ABE3-5761-B504-A242-97B4D16982C5">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:21:53 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EFCA79ED-7815-A5FB-0F0C-C749322DF81F" referredColumn="7EDA341B-B025-EA49-2D27-7D21528223ED"/>
+</associations>
+</Column>
+<Column name="id_articulo" id="31CDB1C2-98A7-A596-C28A-ABBFB4148E47">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:21:57 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B909CF5A-48B0-E59A-0FF5-FFC6EC749A96" referredColumn="311F5AB9-508E-4BD8-70B8-CD0C19059933"/>
+</associations>
+</Column>
+<Column name="cantidad" id="D3E8EBCB-583A-9B68-3ABE-6A9AFEB2ED19">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:21:46 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="55B3558A-D85E-BACF-147A-BDA2657CB056" name="DETALLE_FACTURA_PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:22:16 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C919ABE3-5761-B504-A242-97B4D16982C5"/>
+<colUsage columnID="31CDB1C2-98A7-A596-C28A-ABBFB4148E47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8719146B-B258-9064-9469-B174F224ACD9" name="DETALLE_FACTURA_FACTURA_FK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:21:53 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C919ABE3-5761-B504-A242-97B4D16982C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FB6769D1-0FC3-2ADC-54E1-949225C1D9DB" name="DETALLE_FACTURA_ARTICULO_FK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:21:57 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="31CDB1C2-98A7-A596-C28A-ABBFB4148E47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

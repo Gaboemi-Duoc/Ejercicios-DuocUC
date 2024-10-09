@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="26494726-55F5-23D9-F7CB-EE06FAE4A2A5" name="ZONA">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:13:39 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_zona" id="ABCFE158-DD16-3631-8C87-AC53ADEF0AE4">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:14:11 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="067927AE-B060-9985-D07C-2850E4651ADB">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:14:11 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="porcentaje" id="8853405C-F5FD-27DF-E27B-A2AB170A9802">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:14:11 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4ED72BC2-8FF9-1995-0979-C018FA1D1F3C" name="ZONA_PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:14:11 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ABCFE158-DD16-3631-8C87-AC53ADEF0AE4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

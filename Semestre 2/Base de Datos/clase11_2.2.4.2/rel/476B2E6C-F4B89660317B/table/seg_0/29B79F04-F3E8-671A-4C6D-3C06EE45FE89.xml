@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="29B79F04-F3E8-671A-4C6D-3C06EE45FE89" name="MARCA">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:41:34 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_marca" id="C3E7C9B1-1CD4-F644-BD9A-F25DE0F462A7">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:42:00 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="FC4D0AE9-8431-6584-4918-E00BB1A4991D">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:42:00 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="561CD6BF-8296-D3A4-01FD-33BBA92FE053" name="MARCA_PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:42:00 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C3E7C9B1-1CD4-F644-BD9A-F25DE0F462A7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

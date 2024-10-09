@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DCE996B0-6DAE-43C5-6528-4ED92D4C9478" name="ARTICULO">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:08:34 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_articulo" id="311F5AB9-508E-4BD8-70B8-CD0C19059933">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:10:06 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="0CFAA03F-C5DF-3FE7-0AEC-2455E72B9F04">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:10:06 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="precio" id="524B1F5D-B1D4-5127-F52E-B8ED95E8FDDC">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:10:06 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stock_actual" id="0C5E5253-8116-18D0-E7C2-7D63A85B314F">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:10:06 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stock_minimo" id="E3881E22-2893-3313-DD48-EDECDC22B8EE">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:10:06 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_marca" id="9EE019D0-27C5-C384-C129-374623400E28">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:42:07 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F961DDF0-A360-6F3A-567D-2FB96C4F5905" referredColumn="C3E7C9B1-1CD4-F644-BD9A-F25DE0F462A7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9C6804EA-5B7B-5190-AA42-D7EC21CE0815" name="ARTICULO_PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:10:06 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="311F5AB9-508E-4BD8-70B8-CD0C19059933"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3FA73AB6-7BB7-62E1-BA77-E33E3E4B6B28" name="ARTICULO_MARCA_FK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:42:07 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9EE019D0-27C5-C384-C129-374623400E28"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

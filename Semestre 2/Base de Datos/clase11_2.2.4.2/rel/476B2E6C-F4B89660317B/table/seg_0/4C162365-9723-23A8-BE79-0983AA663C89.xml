@@ -1,0 +1,181 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4C162365-9723-23A8-BE79-0983AA663C89" name="VENDEDOR">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:10:42 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_vendedor" id="BAC23202-7625-09D6-601E-CC951B14BA26">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:13:33 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="run" id="F69CBFE0-D945-D578-F93A-6F94C17F5CBA">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:13:33 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dv" id="04EA3787-A435-6628-D716-CCC57848542F">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:13:33 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombres" id="215BD452-B2BE-848A-5574-59743654F1EF">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:13:33 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apaterno" id="878879F3-3E3E-2715-7B7F-FDF4013E1145">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:13:33 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="amaterno" id="49245EB7-C7E2-CBE3-856D-1B89699365C6">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:13:33 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_nacimiento" id="C62E4169-279C-D251-E4C9-CB0B27A81EEF">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:13:33 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_contrato" id="C42B32C0-012E-1BDF-3DCC-F7700AE016AF">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:13:33 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sueldo" id="2A596D68-6D47-1972-DC61-DD787397CB89">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:13:33 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comision" id="8C444280-AD39-44C0-E760-CA53D40DBF0E">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:13:33 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_zona" id="C7FC0358-4825-D718-ACC2-C0A115248A05">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:14:20 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="82C3A353-C96A-B743-3557-4D9D8BE0D090" referredColumn="ABCFE158-DD16-3631-8C87-AC53ADEF0AE4"/>
+</associations>
+</Column>
+<Column name="id_categoria" id="37068C7C-BEF2-D1DB-A8AC-68830C98FD81">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:15:25 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DA2455A8-4DDD-68A8-8C88-E9144E28E9DB" referredColumn="E6DEDED6-BA18-DEBE-4869-6B01F8733E44"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DDE26EAD-5FA6-8508-0B11-C7AE5C44E648" name="VENDEDOR_PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:13:33 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BAC23202-7625-09D6-601E-CC951B14BA26"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="433F069C-032A-D36F-33C7-707303E4A4EF" name="VENDEDOR_ZONA_FK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:14:20 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7FC0358-4825-D718-ACC2-C0A115248A05"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9DE13EDC-C5E5-4949-1E24-161D75D0E10A" name="VENDEDOR_CATEGORIA_FK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 14:15:25 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="37068C7C-BEF2-D1DB-A8AC-68830C98FD81"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

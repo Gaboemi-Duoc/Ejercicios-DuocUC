@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="BOLETA_EMPLEADO_FK" directorySegmentName="seg_0" id="C0702FB3-7D7A-3273-5985-40A5A5F89DA1">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 15:16:00 UTC</createdTime>
+<generatorID>9B757363-82C4-B6C9-74BC-0D8D450754A1</generatorID>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<engineerTo>
+<item key="E7539DCD-3A3E-A4BB-68CE-47E4CA9F4F78" value="true"/>
+</engineerTo>
+<sourcePk>DA78B4F5-F21B-1715-70AB-D05A3B8C73E6</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>41EA44BB-010F-D24A-2141-8CEF5F584E85</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D00706AA-6116-D710-D68F-0398B3424DB5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

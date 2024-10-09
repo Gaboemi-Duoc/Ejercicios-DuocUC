@@ -26,8 +26,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>4</dataTypeSize>
-<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="nombres" id="4EAD1A23-8080-E54B-1DFB-34F8B66BC626">
@@ -71,38 +71,6 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="fecha_contrato" id="57FFB908-EF94-9E14-12DB-0513403D29D7">
-<createdBy>pvespucio</createdBy>
-<createdTime>2024-10-02 15:21:39 UTC</createdTime>
-<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="sueldo" id="E9B29D5E-ED9A-72B9-66DD-714C03FF3EB9">
-<createdBy>pvespucio</createdBy>
-<createdTime>2024-10-02 15:21:39 UTC</createdTime>
-<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="comision" id="63FD356B-3F92-A570-753B-F2B0F17CACDD">
-<createdBy>pvespucio</createdBy>
-<createdTime>2024-10-02 15:21:39 UTC</createdTime>
-<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>

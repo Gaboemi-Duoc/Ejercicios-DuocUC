@@ -4,7 +4,7 @@
 <createdTime>2024-10-02 15:30:37 UTC</createdTime>
 <ownerDesignName>clase10_2.2.4.1</ownerDesignName>
 <referredTableLongName>PRODUCTO</referredTableLongName>
-<deleteRule>NO ACTION</deleteRule>
+<deleteRule>CASCADE</deleteRule>
 <referredTableID>E1CDA39E-F89C-8824-DF3B-87E0E438327D</referredTableID>
 <keyObject>57AD7CE0-ADF3-FC43-5129-8B36EFC918D3</keyObject>
 <referredKeyID>57AD7CE0-ADF3-FC43-5129-8B36EFC918D3</referredKeyID>

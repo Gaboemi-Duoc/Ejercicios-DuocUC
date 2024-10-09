@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="EMPLEADO_EQUIPO_FK" directorySegmentName="seg_0" id="1B484FF0-13DE-FC21-116B-AF221CB46A69">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-09 15:16:00 UTC</createdTime>
+<generatorID>18AE9D1C-F5E9-1884-8B5A-28A37A7DCF69</generatorID>
+<ownerDesignName>clase10_2.2.4.1</ownerDesignName>
+<engineerTo>
+<item key="E7539DCD-3A3E-A4BB-68CE-47E4CA9F4F78" value="true"/>
+</engineerTo>
+<sourcePk>ECBCC5E5-0C8F-C465-5A8E-9936096DFAB8</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>CB9754FC-4DEF-431E-6EBC-42A53730DA0E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>41EA44BB-010F-D24A-2141-8CEF5F584E85</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
