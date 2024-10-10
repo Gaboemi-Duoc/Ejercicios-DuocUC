@@ -1,0 +1,11 @@
+Sucesiones o Progresiones
+
+Sucesión Aritmética	ej: A1 = 5; A2 = 8; A3 = 11;…
+d = Au+1 - Au		ej: d = 8 - 11 = 3
+Termino General para una sucesión en n
+Au = A1 + (n-1)*d	ej: A6 = 5 + (6-1)*3 = 20
+
+Sucesión Geométrica
+
+r = bm+1 / bm
+bm = b1 *r(m-1)
