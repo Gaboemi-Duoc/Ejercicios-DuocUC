@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B16CB50C-3637-6243-790D-660A1BA90896" name="DELITO">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:34:16 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_delito" id="4E3DA24A-FE04-0F4D-5CDB-7035086D3464">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:35:07 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_delito" id="60B54BC4-279D-B696-C47B-130085CC52C6">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:35:07 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9B36E166-A15D-8A50-BDE6-E3CB68117BEB" name="DELITO_PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:35:07 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E3DA24A-FE04-0F4D-5CDB-7035086D3464"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

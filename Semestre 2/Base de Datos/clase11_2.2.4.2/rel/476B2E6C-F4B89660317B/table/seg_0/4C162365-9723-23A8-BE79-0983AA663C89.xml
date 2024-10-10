@@ -84,36 +84,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fecha_contrato" id="C42B32C0-012E-1BDF-3DCC-F7700AE016AF">
-<createdBy>pvespucio</createdBy>
-<createdTime>2024-10-09 14:13:33 UTC</createdTime>
-<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="sueldo" id="2A596D68-6D47-1972-DC61-DD787397CB89">
-<createdBy>pvespucio</createdBy>
-<createdTime>2024-10-09 14:13:33 UTC</createdTime>
-<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="comision" id="8C444280-AD39-44C0-E760-CA53D40DBF0E">
-<createdBy>pvespucio</createdBy>
-<createdTime>2024-10-09 14:13:33 UTC</createdTime>
-<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="id_zona" id="C7FC0358-4825-D718-ACC2-C0A115248A05">
 <createdBy>pvespucio</createdBy>
 <createdTime>2024-10-09 14:14:20 UTC</createdTime>
@@ -144,6 +114,20 @@
 <colAssociation fkAssociation="DA2455A8-4DDD-68A8-8C88-E9144E28E9DB" referredColumn="E6DEDED6-BA18-DEBE-4869-6B01F8733E44"/>
 </associations>
 </Column>
+<Column name="id_contrato" id="A88DC794-6CE2-5B98-7943-C87E4CEB5977">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 17:46:57 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="10843A64-BB44-2AEA-386C-D860091F421D" referredColumn="73ACBA89-3B0F-C758-E73E-A132883BC3AF"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="DDE26EAD-5FA6-8508-0B11-C7AE5C44E648" name="VENDEDOR_PK">
@@ -155,6 +139,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="BAC23202-7625-09D6-601E-CC951B14BA26"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CF3224AA-B0ED-56AC-CDFC-54B09C4BA267" name="VENDEDOR__IDX">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 17:49:06 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A88DC794-6CE2-5B98-7943-C87E4CEB5977"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="433F069C-032A-D36F-33C7-707303E4A4EF" name="VENDEDOR_ZONA_FK">
@@ -175,6 +169,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="37068C7C-BEF2-D1DB-A8AC-68830C98FD81"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="047427F0-823E-F8D4-F1C1-6582F8B88B43" name="VENDEDOR_CONTRATO_FK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 17:46:57 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A88DC794-6CE2-5B98-7943-C87E4CEB5977"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

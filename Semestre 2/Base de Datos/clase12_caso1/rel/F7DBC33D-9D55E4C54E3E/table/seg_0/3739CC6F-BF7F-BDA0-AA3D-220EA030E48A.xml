@@ -1,0 +1,157 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3739CC6F-BF7F-BDA0-AA3D-220EA030E48A" name="PERSONA">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 17:50:56 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_denuncia" id="B39ACC60-4A63-C71D-B0BD-A0EC51BF41F2">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:31:28 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D091A170-6565-F32D-30FF-48213D634C8F" referredColumn="400C5B9F-2AF4-3191-A240-9435C7CD9FBB"/>
+</associations>
+</Column>
+<Column name="apodo" id="2F697708-6004-9AC7-92E4-B3BFDB54525F">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:01:22 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45</dataTypeSize>
+<ownDataTypeParameters>45,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="E5631EB7-0496-53F9-164E-8EC10CF7DDD6">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:01:22 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45</dataTypeSize>
+<ownDataTypeParameters>45,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rut" id="7321F824-9DB3-A8E0-66E6-0423BD323014">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:01:22 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nacionalidad" id="21223EB5-A696-137E-8A9D-18D62E1BA84A">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:01:22 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45</dataTypeSize>
+<ownDataTypeParameters>45,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="edad" id="82E60249-8892-736D-1F48-86ED794AFFD0">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:01:22 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sexo" id="92263D98-B073-6AC9-9666-15F790297F29">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:01:22 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_rol_delictual" id="0FEA4DBB-F597-7481-6B8C-A595C0ED432B">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:46:54 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="45C6C706-5913-09DE-B6A7-E840A6931037" referredColumn="6BA9D30E-BEC2-A7F0-BC6F-0CF3E79FB835"/>
+</associations>
+</Column>
+<Column name="es_funcionario" id="0F1946D9-14D9-903D-409C-E68B600037C0">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:01:22 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4BA996ED-7875-7A11-361F-0D8A44E5FA08" name="PERSONA_PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:01:22 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B39ACC60-4A63-C71D-B0BD-A0EC51BF41F2"/>
+<colUsage columnID="2F697708-6004-9AC7-92E4-B3BFDB54525F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E3D87D0E-2153-44B6-8A46-7AC65C78A034" name="PERSONA_DENUNCIA_FK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:31:28 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B39ACC60-4A63-C71D-B0BD-A0EC51BF41F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6937345B-5BA5-339F-61EF-7460F848397B" name="PERSONA_ROL_DELICTUAL_FK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:46:54 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0FEA4DBB-F597-7481-6B8C-A595C0ED432B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

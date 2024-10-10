@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C4917EEF-DE9C-4E22-09F8-6F99E725E70F" name="ARMAS">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:23:27 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_denuncia" id="E1AAC514-EF5F-F118-6A34-6F2263211636">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:36:34 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CA39D3DF-D57F-8571-5078-DA508373ED6D" referredColumn="9F9BF09A-E709-E2A6-471C-F351FCF6C8B6"/>
+</associations>
+</Column>
+<Column name="armas_how" id="47295216-9672-7531-6E31-B0DC3CD9B79C">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:30:06 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45</dataTypeSize>
+<ownDataTypeParameters>45,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="armas_cantidad" id="0D4AC006-07A6-64F2-C092-45F597BC52C2">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:30:06 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="armas_tipo" id="7BB176BE-C395-4D09-9613-426FC2D9B5C6">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:30:06 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="armas_tipo_otro" id="50A6A51F-60A4-9C70-E58B-005D207F1C30">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:30:06 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="792FDFE0-FC9B-83BB-96D8-D0C91CAA9BC9" name="ARMAS_PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:36:41 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E1AAC514-EF5F-F118-6A34-6F2263211636"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6BE11C20-B364-9228-C382-98DCEF623C90" name="ARMAS_HECHOS_FK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:36:34 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E1AAC514-EF5F-F118-6A34-6F2263211636"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

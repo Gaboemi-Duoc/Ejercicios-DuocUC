@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4813FC13-AA49-5A8E-21FD-97B48E95D9A5" name="DENUNCIA">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:30:26 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_denuncia" id="400C5B9F-2AF4-3191-A240-9435C7CD9FBB">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:30:52 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_delito" id="392E55B9-3857-A949-4858-14ADE7E2686A">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:35:12 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2E27DF06-2359-D974-FEBD-B485041BBD3B" referredColumn="4E3DA24A-FE04-0F4D-5CDB-7035086D3464"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="825F6843-0E07-DA20-B32D-77C9877D1D14" name="DENUNCIA_PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:30:52 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="400C5B9F-2AF4-3191-A240-9435C7CD9FBB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F37585B2-B891-9193-FE84-A687F64C1EBF" name="DENUNCIA_DELITO_FK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:35:12 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="392E55B9-3857-A949-4858-14ADE7E2686A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

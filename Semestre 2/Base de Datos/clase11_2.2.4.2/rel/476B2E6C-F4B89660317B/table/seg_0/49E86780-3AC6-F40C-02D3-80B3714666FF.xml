@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="49E86780-3AC6-F40C-02D3-80B3714666FF" name="CONTRATO">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 17:45:56 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_contrato" id="73ACBA89-3B0F-C758-E73E-A132883BC3AF">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 17:46:25 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_contrato" id="F3D4F1DD-3FF9-4AB8-4A42-519CD14B94E7">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 17:46:25 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sueldo" id="5AD3FD01-C921-8E59-D46D-57185AA13174">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 17:46:25 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comision" id="62C11DF5-B14E-98DD-D66B-C5DF4349B914">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 17:46:25 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EFB764A3-850C-B530-B8EC-D065F6F5E3A8" name="CONTRATO_PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 17:46:25 UTC</createdTime>
+<ownerDesignName>clase11_2.2.4.2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="73ACBA89-3B0F-C758-E73E-A132883BC3AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

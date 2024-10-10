@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="58A15E97-B974-2BC1-F3A8-2A3EEFC51121" name="VEHICULO">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:23:32 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_denuncia" id="E329B761-A70C-067D-0270-F62D56F2E582">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:37:36 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="264CC0A9-0173-E1FA-C754-9E5F4631503A" referredColumn="9F9BF09A-E709-E2A6-471C-F351FCF6C8B6"/>
+</associations>
+</Column>
+<Column name="actor_delictual_vehiculo" id="4ADB8EA4-27FB-AFFE-776D-879A7F25EF6E">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:29:52 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="marca" id="9642357D-DEBA-C463-5A12-6A34B9CA77B2">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:29:52 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo" id="C153836B-5B11-0378-8352-8AEF8CC7892D">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:29:52 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="patente" id="C0EBA4D2-C1CC-2306-D292-01DF1FD70FAC">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:29:52 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="82BE69DF-9643-1183-93CA-3A23840D74A9" name="VEHICULO_PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:38:32 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E329B761-A70C-067D-0270-F62D56F2E582"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6508716A-FEF4-537F-A129-6A38806102EE" name="VEHICULO_HECHOS_FK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:37:36 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E329B761-A70C-067D-0270-F62D56F2E582"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

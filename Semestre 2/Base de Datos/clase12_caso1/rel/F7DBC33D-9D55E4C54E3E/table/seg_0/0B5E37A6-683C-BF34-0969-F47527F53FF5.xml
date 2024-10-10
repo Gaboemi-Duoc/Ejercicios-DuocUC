@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0B5E37A6-683C-BF34-0969-F47527F53FF5" name="ROL_DELICTUAL">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:45:54 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_rol_delictual" id="6BA9D30E-BEC2-A7F0-BC6F-0CF3E79FB835">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:46:31 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_rol_delictual" id="0D92AF8A-6D15-0354-40DD-12A526E729FE">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:46:31 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1B64E90E-C46B-F728-51B9-2438D93832D2" name="ROL_DELICTUAL_PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:46:31 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6BA9D30E-BEC2-A7F0-BC6F-0CF3E79FB835"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="45C6C706-5913-09DE-B6A7-E840A6931037" containerWithKeyObject="3739CC6F-BF7F-BDA0-AA3D-220EA030E48A" localFKIndex="6937345B-5BA5-339F-61EF-7460F848397B" name="PERSONA_ROL_DELICTUAL_FK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:46:54 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<referredTableLongName>ROL_DELICTUAL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0B5E37A6-683C-BF34-0969-F47527F53FF5</referredTableID>
+<keyObject>1B64E90E-C46B-F728-51B9-2438D93832D2</keyObject>
+<referredKeyID>1B64E90E-C46B-F728-51B9-2438D93832D2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_rol_delictual</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

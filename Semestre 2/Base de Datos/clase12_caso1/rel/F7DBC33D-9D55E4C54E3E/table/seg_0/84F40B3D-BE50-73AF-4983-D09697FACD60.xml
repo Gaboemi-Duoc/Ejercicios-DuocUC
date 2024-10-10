@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="84F40B3D-BE50-73AF-4983-D09697FACD60" name="LUGAR">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:02:35 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_denuncia" id="966190DE-E94E-46EB-7F95-D80A6AB4C591">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:32:08 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CC4BDF40-75E6-A7FB-F571-227DBAB33601" referredColumn="400C5B9F-2AF4-3191-A240-9435C7CD9FBB"/>
+</associations>
+</Column>
+<Column name="uso_del_lugar" id="9952CBEC-D07B-3D35-8CC5-AD9EAA941C0B">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:03:53 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="calle" id="D25B5D10-14F5-BB88-1905-5F5AB85294CB">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:03:53 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comuna" id="21B6912D-6C22-133C-5360-FB0265AE33FE">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:03:53 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero" id="07C0A392-0929-0F17-4574-A5C123DB0546">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:03:53 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dep_bloc" id="3394262E-5B71-DC05-6C3D-2B23F250F851">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:03:53 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="otros_datos" id="612E2207-A42A-5A7F-0410-544DE63AC6D5">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:03:53 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="168C4736-3B03-3039-DB43-1E32B8124FD4" name="LUGAR_PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:32:20 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="966190DE-E94E-46EB-7F95-D80A6AB4C591"/>
+<colUsage columnID="9952CBEC-D07B-3D35-8CC5-AD9EAA941C0B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="99074C66-7B5C-BCE9-7385-849622029000" name="LUGAR_DENUNCIA_FK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:32:08 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="966190DE-E94E-46EB-7F95-D80A6AB4C591"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

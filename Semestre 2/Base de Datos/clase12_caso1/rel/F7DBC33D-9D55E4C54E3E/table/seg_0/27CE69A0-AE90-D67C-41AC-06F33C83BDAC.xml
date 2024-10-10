@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="27CE69A0-AE90-D67C-41AC-06F33C83BDAC" name="HECHOS">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:09:06 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_denuncia" id="9F9BF09A-E709-E2A6-471C-F351FCF6C8B6">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:33:27 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3CEE6464-C85A-55EC-B0EB-375857C13E75" referredColumn="400C5B9F-2AF4-3191-A240-9435C7CD9FBB"/>
+</associations>
+</Column>
+<Column name="modus_operandi" id="214B20FE-0FF6-25C6-4C55-8F89D44894A9">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:16:44 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="modus_operandi_detalle" id="E04E17C5-5A57-7BAA-724A-F6CBE4143C41">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:16:44 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="modus_operandi_imagen" id="323CEF84-3417-CE05-6E4F-007107D01187">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:16:44 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT010</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="25820F30-9DA9-CBC8-83F0-A12D35AE6D37" name="HECHOS_PK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:33:35 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F9BF09A-E709-E2A6-471C-F351FCF6C8B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E31CA8E9-FD6F-7DCE-5A1C-5DFD0320C816" name="HECHOS_DENUNCIA_FK">
+<createdBy>pvespucio</createdBy>
+<createdTime>2024-10-10 18:33:27 UTC</createdTime>
+<ownerDesignName>clase12_caso1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F9BF09A-E709-E2A6-471C-F351FCF6C8B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
