@@ -14,17 +14,23 @@ public class Ropa extends Producto {
 	public void ajustarTalla(String nuevaTalla) {
 		talla = nuevaTalla;
 	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public String getTalla() {
+		return talla;
+	}
 
 	public Ropa(String talla, String color, String idProducto, String nombre, double precio) {
 		super(idProducto, nombre, precio);
 		this.talla = talla;
 		this.color = color;
 	}
-	
-	public Ropa(String talla, String color, Producto producto) {
-		super(producto.getIdProducto(), producto.getNombre(), producto.getPrecio());
-		this.talla = null;
-		this.color = null;
+
+	@Override
+	public String getNombre() {
+		return super.getNombre() + " " + color;
 	}
 	
 	@Override

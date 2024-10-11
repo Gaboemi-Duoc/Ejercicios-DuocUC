@@ -23,6 +23,10 @@ public class Electronico extends Producto {
 		this.garantiaMeses = garantiaMeses;
 	}
 
+	public int getGarantiaMeses() {
+		return garantiaMeses;
+	}
+
 	@Override
 	public String getNombre() {
 		return marca + " " + super.getNombre();
