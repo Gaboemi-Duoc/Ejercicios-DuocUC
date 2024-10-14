@@ -1,6 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
+
 
 package alumnoduoc.plataformacomercio;
 import java.util.Scanner;
@@ -127,10 +125,9 @@ public class PlataformaComercio {
 					System.out.println("Ingrese el Color que deseada: ");
 					System.out.print("> ");
 					String color = leer.next();
-					Ropa subProducto = (Ropa)productoSeleccionado;
-					subProducto.ajustarTalla(talla);
-					subProducto.setColor(color);
-					productos.add(subProducto);
+					((Ropa)productoSeleccionado).ajustarTalla(talla);
+					((Ropa)productoSeleccionado).setColor(color);
+					productos.add(productoSeleccionado);
 				} else {
 					productos.add(productoSeleccionado);
 				}
