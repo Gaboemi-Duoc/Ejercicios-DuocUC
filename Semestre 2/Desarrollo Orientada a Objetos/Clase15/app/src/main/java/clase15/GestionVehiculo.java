@@ -3,12 +3,16 @@
  */
 package clase15;
 
+import java.util.ArrayList;
+
+import main.java.clase15.Sucursal;
+import main.java.clase15.Vehiculo;
+import main.java.clase15.VehiculoEstandar;
+
 public class GestionVehiculo {
-    public String getGreeting() {
-        return "Hello World!";
-    }
 
     public static void main(String[] args) {
-        System.out.println(new GestionVehiculo().getGreeting());
+        Sucursal bonitSucursal = new Sucursal("0","Sucursal Santiago Centro");
+        VehiculoEstandar carrito = new VehiculoEstandar(null, null, 0);
     }
 }
