@@ -23,7 +23,7 @@ public class Departamento {
 	double calcularCostoTotalSalarios() {
 		double totalCosto = 0;
 		for (Empleado empleado : empleados) {
-			totalCosto += empleado.calcularSalario();
+			totalCosto += empleado.calcularSalario() + empleado.calcularBonus();
 		}
 		return totalCosto;
 	}

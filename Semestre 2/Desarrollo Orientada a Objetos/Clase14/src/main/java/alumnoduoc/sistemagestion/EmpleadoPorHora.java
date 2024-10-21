@@ -1,10 +1,13 @@
 package alumnoduoc.sistemagestion;
 
-public class EmpleadoPorHora extends Empleado implements BonusCalculable {
-	
+public class EmpleadoPorHora extends Empleado {
+
+	public EmpleadoPorHora(String idEmpleado, String nombre, Double sueldoBase) {
+		super(nombre, nombre, sueldoBase);
+	}
+
 	@Override
 	public double calcularBonus() {
-		// TODO Auto-generated method stub
-		return 0;
+		return calcularSalario() * 0.15;
 	}
 }
