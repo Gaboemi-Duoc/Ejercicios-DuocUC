@@ -10,9 +10,11 @@ package coco;
  */
 public class Calculadora extends javax.swing.JFrame {
     
-    static String operation;
-    static String lastNum;
+    static int lastOperator;
+    static String operation = "";
+    static String lastNum = "";
     static String currNum = "0";
+    static String resultado = "";
     
     /**
      * Creates new form Calculadora
@@ -224,7 +226,7 @@ public class Calculadora extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -272,6 +274,7 @@ public class Calculadora extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -303,18 +306,42 @@ public class Calculadora extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void resultActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resultActionPerformed
-        // TODO add your handling code here:
+        if (!lastNum.isBlank()) {
+            calculation(lastOperator,lastNum);
+            int indexPZero = lastNum.indexOf(".0");
+            if (indexPZero == lastNum.length() - 2) {
+                lastNum = lastNum.substring(0, lastNum.length() - 2);
+            }
+        } else {
+            lastNum = currNum;
+        }
+        operation = operation + " " + currNum + " =";
+        resultado = lastNum;
+        currNum = "0";
+        updateCalculusOperator();
     }//GEN-LAST:event_resultActionPerformed
 
     private void negateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_negateActionPerformed
-        if (!currNum.equals("0")) {
-            if (currNum.contains("-")) {
-                currNum = currNum.substring(1, currNum.length());
-            } else {
-                currNum = new StringBuffer(currNum).insert(0, "-").toString();
+        if (resultado.isEmpty()) {
+            if (!currNum.equals("0")) {
+                if (currNum.contains("-")) {
+                    currNum = currNum.substring(1, currNum.length());
+                } else {
+                    currNum = new StringBuffer(currNum).insert(0, "-").toString();
+                }
             }
+            updateCalculus();
+        } else {
+            if (!resultado.equals("0")) {
+                if (resultado.contains("-")) {
+                    lastNum = resultado.substring(1, resultado.length());
+                } else {
+                    lastNum = new StringBuffer(resultado).insert(0, "-").toString();
+                }
+            }
+            resultado = lastNum;
+            updateCalculusOperator();
         }
-        updateCalculus();
     }//GEN-LAST:event_negateActionPerformed
 
     private void zeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zeroActionPerformed
@@ -359,11 +386,37 @@ public class Calculadora extends javax.swing.JFrame {
     }//GEN-LAST:event_threeActionPerformed
 
     private void minusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minusActionPerformed
-        // TODO add your handling code here:
+        if (!lastNum.isBlank()) {
+            lastNum = String.valueOf(Double.parseDouble(lastNum) - Double.parseDouble(currNum));
+            int indexPZero = lastNum.indexOf(".0");
+            if (indexPZero == lastNum.length() - 2) {
+                lastNum = lastNum.substring(0, lastNum.length() - 2);
+            }
+        } else {
+            lastNum = currNum;
+        }
+        lastOperator = 1;
+        operation = lastNum + " -";
+        resultado = lastNum;
+        currNum = "0";
+        updateCalculusOperator();
     }//GEN-LAST:event_minusActionPerformed
 
     private void plusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plusActionPerformed
-        // TODO add your handling code here:
+        if (!lastNum.isBlank()) {
+            lastNum = String.valueOf(Double.parseDouble(lastNum) + Double.parseDouble(currNum));
+            int indexPZero = lastNum.indexOf(".0");
+            if (indexPZero == lastNum.length() - 2) {
+                lastNum = lastNum.substring(0, lastNum.length() - 2);
+            }
+        } else {
+            lastNum = currNum;
+        }
+        lastOperator = 0;
+        operation = lastNum + " +";
+        resultado = lastNum;
+        currNum = "0";
+        updateCalculusOperator();
     }//GEN-LAST:event_plusActionPerformed
 
     private void sixActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sixActionPerformed
@@ -424,16 +477,38 @@ public class Calculadora extends javax.swing.JFrame {
         if (!currNum.equals("0")) {
             currNum = currNum.substring(0, currNum.length() - 1);
         }
-        if (currNum.equals("")) {
+        if (currNum.isBlank()) {
             currNum = "0";
         }
         updateCalculus();
     }//GEN-LAST:event_backspaceActionPerformed
 
     private void updateCalculus() {
+        resultado = "";
+        if (operation.contains("=")) {
+            operation = "";
+            lastNum = "";
+        }
         jLabel1.setText(operation);
         jLabel2.setText(currNum);
     }
+    private void updateCalculusOperator() {
+        jLabel1.setText(operation);
+        jLabel2.setText(resultado);
+    }
+    private void calculation(int n, String Num) {
+        switch (n) {
+            case 0:
+                lastNum = String.valueOf(Double.parseDouble(Num) + Double.parseDouble(currNum));
+                break;
+            case 1:
+                lastNum = String.valueOf(Double.parseDouble(Num) - Double.parseDouble(currNum));
+                break;
+            default:
+                throw new AssertionError();
+        }
+    }
+    
     
     /**
      * @param args the command line arguments
