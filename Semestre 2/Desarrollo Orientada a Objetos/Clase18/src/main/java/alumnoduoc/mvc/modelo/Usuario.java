@@ -4,6 +4,7 @@
  */
 package alumnoduoc.mvc.modelo;
 
+import static alumnoduoc.mvc.controlador.LibraryController.prestamos;
 import java.util.ArrayList;
 
 /**
@@ -11,15 +12,25 @@ import java.util.ArrayList;
  * @author pvespucio
  */
 public class Usuario {
+    static int newIdUsuario = 1;
     int idUsuario;
     String nombre;
     ArrayList<Prestamo> librosPrestados;
-    
-    void realizarPrestamo(Libro libro, String fechaPrestamo) {
-        
+
+    public Usuario(String nombre, ArrayList<Prestamo> librosPrestados) {
+        this.idUsuario = newIdUsuario;
+        this.nombre = nombre;
+        this.librosPrestados = librosPrestados;
+        newIdUsuario += 1;
     }
     
-    ArrayList<Prestamo> verHistorialPrestamos() {
+    public void realizarPrestamo(Libro libro, String fechaPrestamo) {
+        libro.prestarLibro();
+        Prestamo newPrestamo = new Prestamo(libro, this, fechaPrestamo);
+        prestamos.add(newPrestamo);
+    }
+    
+    public ArrayList<Prestamo> verHistorialPrestamos() {
         return librosPrestados;
     }
 }

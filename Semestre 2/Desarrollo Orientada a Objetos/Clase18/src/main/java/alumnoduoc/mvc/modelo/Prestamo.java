@@ -9,15 +9,26 @@ package alumnoduoc.mvc.modelo;
  * @author pvespucio
  */
 public class Prestamo {
+    static int newIdPrestamo = 1;
     int idPrestamo;
     Libro libroPrestado;
     Usuario usuario;
     String fechaPrestamo, fechaDevolucion;
-    
-    void registrarDevolucion(){
-        
+
+    public Prestamo(Libro libroPrestado, Usuario usuario, String fechaPrestamo) {
+        this.idPrestamo = newIdPrestamo;
+        this.libroPrestado = libroPrestado;
+        this.usuario = usuario;
+        this.fechaPrestamo = fechaPrestamo;
+        this.fechaDevolucion = "";
+        newIdPrestamo += 1;
     }
-    int calcularDiasPrestamo() {
+    
+    public void registrarDevolucion(){
+        this.libroPrestado.devolverLibro();
+        this.fechaDevolucion = "fechaDevolucion";
+    }
+    public int calcularDiasPrestamo() {
         return 1;
     }
 }

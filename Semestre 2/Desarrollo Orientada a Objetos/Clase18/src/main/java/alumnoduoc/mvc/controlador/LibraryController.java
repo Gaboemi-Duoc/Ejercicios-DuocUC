@@ -14,25 +14,24 @@ import java.util.ArrayList;
 public class LibraryController {
     static LibraryGUI vista = new LibraryGUI();
     public static ArrayList<Libro> inventario = new ArrayList<>();
-    public static ArrayList<Libro> usuarios = new ArrayList<>();
-    public static ArrayList<Libro> prestamos = new ArrayList<>();
-    
-    static int newIdLibro = 1;
-    static int newIdUsuario = 1;
-    static int newIdPrestamo = 1;
-    
+    public static ArrayList<Usuario> usuarios = new ArrayList<>();
+    public static ArrayList<Prestamo> prestamos = new ArrayList<>();
 
     public static void main(String[] args) {
         vista.setVisible(true);
     }
     
     public static void registrarNuevoLibro( String titulo, String autor, String categoria) {
-        inventario.add(new Libro(newIdLibro, titulo, autor, categoria));
-        newIdLibro += 1;
+        inventario.add(new Libro(titulo, autor, categoria));
     }
     
     public static void realizarPrestamo(Libro libro, Usuario usuario) {
-        
+        if (inventario.contains(libro)) {
+            usuario.realizarPrestamo(libro, "fechaPrestamo");
+            
+        } else {
+            
+        }
     }
     
     public static void registrarDevolucion(Prestamo prestamo) {

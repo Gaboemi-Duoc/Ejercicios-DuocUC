@@ -9,16 +9,18 @@ package alumnoduoc.mvc.modelo;
  * @author pvespucio
  */
 public class Libro {
+    static int newIdLibro = 1;
     int idLibro;
     String titulo, autor, categoria;
     boolean disponible;
 
-    public Libro(int idLibro, String titulo, String autor, String categoria) {
-        this.idLibro = idLibro;
+    public Libro(String titulo, String autor, String categoria) {
+        this.idLibro = newIdLibro;
         this.titulo = titulo;
         this.autor = autor;
         this.categoria = categoria;
         this.disponible = true;
+        newIdLibro += 1;
     }
 
     public int getIdLibro() {
@@ -43,12 +45,20 @@ public class Libro {
     
     
     
-    void prestarLibro(){
-        
+    public void prestarLibro(){
+        if (!disponible) {
+            System.out.println("Este libro ya esta prestado!");
+        } else {
+            disponible = false;
+        }
     }
     
-    void devolverLibro() {
-        
+    public void devolverLibro() {
+        if (disponible) {
+            System.out.println("Este libro ya esta en el inventario");
+        } else {
+            disponible = true;
+        }
     }
     
     boolean getDisponibilidad() {
