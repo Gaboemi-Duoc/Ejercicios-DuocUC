@@ -33,12 +33,40 @@ WHERE
 ORDER BY appaterno_cli, nombre_cli ASC;
 
 -- CASO 3
+UNDEFINE porcentaje_aumento;
 
+-- 8.5%
 -- SIMULACION 1:
 SELECT
     nombre_emp || ' ' || appaterno_emp || ' ' || apmaterno_emp AS "NOMBRE EMPLEADO",
     sueldo_emp AS "SALARIO ACTUAL",
-    sueldo_emp * &porcentaje_aumento AS "AUMENTO",
-    sueldo_emp + sueldo_emp * &&porcentaje_aumento AS "SALARIO REAJUSTADO"
+    sueldo_emp * (&&porcentaje_aumento / 100) AS "AUMENTO",
+    sueldo_emp + sueldo_emp * (&&porcentaje_aumento / 100) AS "SALARIO REAJUSTADO"
 FROM
     empleado
+ORDER BY AUMENTO DESC;
+
+-- 20%
+-- SIMULACION 2:
+SELECT
+    nombre_emp || ' ' || appaterno_emp || ' ' || apmaterno_emp AS "NOMBRE EMPLEADO",
+    sueldo_emp AS "SALARIO ACTUAL",
+    sueldo_emp * (&&porcentaje_aumento / 100) AS "AUMENTO",
+    sueldo_emp + sueldo_emp * (&&porcentaje_aumento / 100) AS "SALARIO REAJUSTADO"
+FROM
+    empleado
+WHERE
+    sueldo_emp BETWEEN 200000 AND 400000
+ORDER BY AUMENTO DESC;
+
+-- CASO 4
+SELECT
+    numrut_emp || '-' || dvrut_emp AS "RUN EMPLEADO",
+    nombre_emp || ' ' || appaterno_emp || ' ' || apmaterno_emp AS "NOMBRE EMPLEADO",
+    sueldo_emp AS "SALARIO ACTUAL",
+    sueldo_emp * (&porcentaje_bono / 100) AS "BONIFICAION EXTRA"
+FROM
+    empleado
+WHERE
+    sueldo_emp < 500000 AND id_categoria_emp != 3
+ORDER BY appaterno_emp ASC;
