@@ -70,3 +70,16 @@ FROM
 WHERE
     sueldo_emp < 500000 AND id_categoria_emp != 3
 ORDER BY appaterno_emp ASC;
+
+-- CASO 5
+SELECT
+    nro_propiedad AS "NÚMERO PROPIEDAD",
+    fecha_entrega_propiedad AS "FECHA ENTREGA PROPIEDAD",
+    direccion_propiedad AS "DIRECCION",
+    superficie,
+    nro_dormitorios AS "CANTIDAD DE DORMITORIOS",
+    nro_banos AS "CANTIDAD DE BAÑOS",
+    valor_arriendo AS "VALOR DE ARRIENDO"
+FROM
+    propiedad
+ORDER BY fecha_entrega_propiedad ASC;
