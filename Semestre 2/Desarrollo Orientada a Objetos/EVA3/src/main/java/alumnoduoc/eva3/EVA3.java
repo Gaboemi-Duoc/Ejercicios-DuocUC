@@ -8,12 +8,12 @@ import vista.ManejadorForm;
 
 /**
  *
- * @author pvespucio
+ * @author Gabo's
  */
 public class EVA3 {
 
-    public static void main(String[] args) {
-        ManejadorForm vista = new ManejadorForm();
-        vista.setVisible(true);
-    }
+	public static void main(String[] args) {
+		ManejadorForm vista = new ManejadorForm();
+		vista.setVisible(true);
+	}
 }

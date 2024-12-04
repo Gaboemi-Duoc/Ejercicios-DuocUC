@@ -6,7 +6,7 @@ package vista;
 
 /**
  *
- * @author pvespucio
+ * @author Gabo's
  */
 public class ManejadorForm extends javax.swing.JFrame {
 
@@ -348,21 +348,37 @@ public class ManejadorForm extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void agregarUsuarioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agregarUsuarioButtonActionPerformed
-        // TODO add your handling code here:
+        updateRegistrarUsuario();
     }//GEN-LAST:event_agregarUsuarioButtonActionPerformed
 
     private void agregarCartaMazoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agregarCartaMazoButtonActionPerformed
-        // TODO add your handling code here:
+        updateAgregarMazo();
     }//GEN-LAST:event_agregarCartaMazoButtonActionPerformed
 
     private void mostrarMazoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mostrarMazoButtonActionPerformed
-        // TODO add your handling code here:
+        idUsuarioMostrarMazoField.setText("");
     }//GEN-LAST:event_mostrarMazoButtonActionPerformed
 
     private void registrarCartaButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registrarCartaButtonActionPerformed
-        // TODO add your handling code here:
+        updateRegistrarCarta();
     }//GEN-LAST:event_registrarCartaButtonActionPerformed
 
+	private void updateRegistrarCarta() {
+		cartaNameField.setText("");
+		elementoBox.setSelectedIndex(0);
+		ataqueField.setText("");
+		defensaField.setText("");
+	}
+	private void updateRegistrarUsuario() {
+		usuarioNameField.setText("");
+		usuarioCorreoField.setText("");
+	}
+	private void updateAgregarMazo() {
+		nombreMazoField.setText("");
+		idUsuarioAgregarMazoField.setText("");
+		idCartaAgregarMazoField.setText("");
+	}
+	
     /**
      * @param args the command line arguments
      */
