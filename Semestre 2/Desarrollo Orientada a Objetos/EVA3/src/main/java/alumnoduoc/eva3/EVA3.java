@@ -4,6 +4,8 @@
 
 package alumnoduoc.eva3;
 
+import vista.ManejadorForm;
+
 /**
  *
  * @author pvespucio
@@ -11,7 +13,7 @@ package alumnoduoc.eva3;
 public class EVA3 {
 
     public static void main(String[] args) {
-        Vista vista = new Vista();
+        ManejadorForm vista = new ManejadorForm();
         vista.setVisible(true);
     }
 }
