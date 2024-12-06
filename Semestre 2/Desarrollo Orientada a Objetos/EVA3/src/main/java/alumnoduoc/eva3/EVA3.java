@@ -119,7 +119,7 @@ public class EVA3 {
 			System.out.println("Conexión exitosa a la base de datos!");
 
 			// Realizar una consulta para conseguir a
-			String sql = "SELECT * FROM cartas WHERE idusuario IN (SELECT id_usuario FROM mazo WHERE id_usuario = ?)";
+			String sql = "SELECT * FROM cartas WHERE ? IN (SELECT id_usuario FROM mazos WHERE mazos.id_carta = cartas.idcarta)";
 
 			PreparedStatement statement = connection.prepareStatement(sql);
 			statement.setInt(1, idUsuario);			// idUsuario
