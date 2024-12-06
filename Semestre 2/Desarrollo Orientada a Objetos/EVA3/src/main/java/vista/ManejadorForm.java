@@ -373,11 +373,11 @@ public class ManejadorForm extends javax.swing.JFrame {
 		usuarioNameField.setText("");
 		usuarioCorreoField.setText("");
 	}
-	private void updateAgregarMazo() {
-		nombreMazoField.setText("");
-		idUsuarioAgregarMazoField.setText("");
-		idCartaAgregarMazoField.setText("");
-	}
+	// private void updateAgregarMazo() {
+	// 	nombreMazoField.setText("");
+	// 	idUsuarioAgregarMazoField.setText("");
+	// 	idCartaAgregarMazoField.setText("");
+	// }
 	
     /**
      * @param args the command line arguments

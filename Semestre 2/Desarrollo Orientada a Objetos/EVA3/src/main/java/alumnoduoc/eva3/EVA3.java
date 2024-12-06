@@ -22,6 +22,8 @@ public class EVA3 {
 	public static ArrayList<Object[]> cartasObjectRS = new ArrayList<>();
 	public static ArrayList<Object[]> usuariosObjectRS = new ArrayList<>();
 	public static ArrayList<Object[]> mazoObjectRS = new ArrayList<>();
+	public static ArrayList<String> cartasLista = new ArrayList<>();
+	public static ArrayList<String> usuariosLista = new ArrayList<>();
 	public static ArrayList<String> mazoLista = new ArrayList<>();
 	
 	public static void main(String[] args) {
@@ -33,7 +35,7 @@ public class EVA3 {
 	// Gets
 	public static void getCartas(){
 		
-		cartasObjectRS.clear();
+		cartasLista.clear();
 
 		Connection connection = null;
 
@@ -50,8 +52,8 @@ public class EVA3 {
 			ResultSet rs = statement.executeQuery(sql);
 			
 			while (rs.next()) {                
-				cartasObjectRS.add(new Object[]{rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5)});
-				mazoLista.add( rs.getString(1) + " - " + rs.getString(2) + " - " + rs.getString(3) + " - " + rs.getString(4) + " - " + rs.getString(5) );
+				//cartasObjectRS.add(new Object[]{rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5)});
+				cartasLista.add( rs.getString(1) + " - " + rs.getString(2) + " - " + rs.getString(3) + " - " + rs.getString(4) + " - " + rs.getString(5) );
 				// System.out.println(rs.getString(1) +" "+ rs.getString(2) + "-" +rs.getString(3) +" "+ rs.getString(4) + " " + rs.getString(5) +" "+ rs.getString(6));
 			}
 
@@ -69,9 +71,79 @@ public class EVA3 {
 		}
 	}
 	public static void getUsuarios(){
-		
+
+		usuariosLista.clear();
+
+		Connection connection = null;
+
+		try {
+			// Establecer la conexión
+			connection = DriverManager.getConnection(url, user, password);
+			System.out.println("Conexión exitosa a la base de datos!");
+
+			// Realizar una consulta para conseguir a
+			String sql = "SELECT * FROM usuarios";
+
+			PreparedStatement statement = connection.prepareStatement(sql);
+
+			ResultSet rs = statement.executeQuery(sql);
+			
+			while (rs.next()) {                
+				//cartasObjectRS.add(new Object[]{rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5)});
+				usuariosLista.add( rs.getString(1) + " - " + rs.getString(2) + " - " + rs.getString(3) );
+				// System.out.println(rs.getString(1) +" "+ rs.getString(2) + "-" +rs.getString(3) +" "+ rs.getString(4) + " " + rs.getString(5) +" "+ rs.getString(6));
+			}
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			// Cerrar la conexión
+			try {
+				if (connection != null) {
+					connection.close();
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
 	}
 	public static void getMazo(int idUsuario){
+
+		mazoLista.clear();
+
+		Connection connection = null;
+
+		try {
+			// Establecer la conexión
+			connection = DriverManager.getConnection(url, user, password);
+			System.out.println("Conexión exitosa a la base de datos!");
+
+			// Realizar una consulta para conseguir a
+			String sql = "SELECT * FROM cartas WHERE idusuario IN (SELECT id_usuario FROM mazo WHERE id_usuario = ?)";
+
+			PreparedStatement statement = connection.prepareStatement(sql);
+			statement.setInt(1, idUsuario);			// idUsuario
+
+			ResultSet rs = statement.executeQuery(sql);
+			
+			while (rs.next()) {                
+				//cartasObjectRS.add(new Object[]{rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5)});
+				mazoLista.add( rs.getString(1) + " - " + rs.getString(2) + " - " + rs.getString(3) );
+				// System.out.println(rs.getString(1) +" "+ rs.getString(2) + "-" +rs.getString(3) +" "+ rs.getString(4) + " " + rs.getString(5) +" "+ rs.getString(6));
+			}
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			// Cerrar la conexión
+			try {
+				if (connection != null) {
+					connection.close();
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
 	}
 	
 	// Sets
@@ -88,19 +160,88 @@ public class EVA3 {
 			String sql = "INSERT INTO cartas (nombre, elemento, ataque, defensa) VALUES (?, ?, ?, ?)";
 
 			PreparedStatement statement = connection.prepareStatement(sql);
-			statement.setString(1, nombre);        // run
-			statement.setString(2, elemento);          // dv
-			statement.setInt(3, atq);       // nombre
-			statement.setInt(4, def);      // apellido
+			statement.setString(1, nombre);			// nombre
+			statement.setString(2, elemento);		// elemento
+			statement.setInt(3, atq);				// ataque
+			statement.setInt(4, def);				// defensa
 
 			// Ejecutar la inserción
 			int rowsInserted = statement.executeUpdate();
 			if (rowsInserted > 0) {
 				System.out.println("¡Carta Insertada!");
 			}
+		
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			// Cerrar la conexión
+			try {
+				if (connection != null) {
+					connection.close();
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+	public static void addUsuario(String nombre, String correo){
+
+		Connection connection = null;
+
+		try {
+			// Establecer la conexión
+			connection = DriverManager.getConnection(url, user, password);
+			System.out.println("Conexión exitosa a la base de datos!");
+
+			// Realizar una consulta para insertar un nuevo alumno
+			String sql = "INSERT INTO cartas (nombre, correo) VALUES (?, ?)";
+
+			PreparedStatement statement = connection.prepareStatement(sql);
+			statement.setString(1, nombre);			// nombre
+			statement.setString(2, correo);		// correo
+
+			// Ejecutar la inserción
+			int rowsInserted = statement.executeUpdate();
+			if (rowsInserted > 0) {
+				System.out.println("¡Usuario Insertado!");
+			}
 			
-			cartasObjectRS.clear();
-			
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			// Cerrar la conexión
+			try {
+				if (connection != null) {
+					connection.close();
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+	public static void addMazo(int idUsuario, int idCarta){
+
+		Connection connection = null;
+
+		try {
+			// Establecer la conexión
+			connection = DriverManager.getConnection(url, user, password);
+			System.out.println("Conexión exitosa a la base de datos!");
+
+			// Realizar una consulta para insertar un nuevo alumno
+			String sql = "INSERT INTO mazos (idUsuario, idCarta) VALUES (?, ?)";
+
+			PreparedStatement statement = connection.prepareStatement(sql);
+			statement.setInt(1, idUsuario);			// idUsuario
+			statement.setInt(2, idCarta);			// idCarta
+
+			// Ejecutar la inserción
+			int rowsInserted = statement.executeUpdate();
+			if (rowsInserted > 0) {
+				System.out.println("Mazo Insertado!");
+			}
 			
 
 		} catch (SQLException e) {
