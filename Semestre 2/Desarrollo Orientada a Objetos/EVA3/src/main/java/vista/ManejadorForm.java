@@ -130,9 +130,9 @@ public class ManejadorForm extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(defensaField, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(35, 35, 35))))))
-            .addGroup(jPanel1Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(cartaEstadoLabel)
+                .addComponent(cartaEstadoLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -203,7 +203,7 @@ public class ManejadorForm extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(13, 13, 13)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 259, Short.MAX_VALUE)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(mostrarMazoButton)
                         .addGap(12, 12, 12)
@@ -233,12 +233,11 @@ public class ManejadorForm extends javax.swing.JFrame {
                 .addComponent(agregarCartaMazoButton)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel3Layout.createSequentialGroup()
+                .addComponent(mazoEstadoLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+            .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(mazoEstadoLabel)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(jLabel9)))
+                .addComponent(jLabel9)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
@@ -257,11 +256,11 @@ public class ManejadorForm extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(agregarCartaMazoButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(mazoEstadoLabel)
+                .addComponent(mazoEstadoLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel9)
-                .addGap(10, 10, 10)
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 172, Short.MAX_VALUE)
+                .addGap(4, 4, 4)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 159, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(mostrarMazoButton)
@@ -314,11 +313,11 @@ public class ManejadorForm extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(usuarioEstadoLabel)
+                .addComponent(usuarioEstadoLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(usuarioRangoLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(usuarioRangoLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -335,10 +334,10 @@ public class ManejadorForm extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(agregarUsuarioButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(usuarioEstadoLabel)
-                .addGap(18, 18, 18)
-                .addComponent(usuarioRangoLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(186, Short.MAX_VALUE))
+                .addComponent(usuarioEstadoLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(usuarioRangoLabel)
+                .addContainerGap(204, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("Registrar Usuario", jPanel2);
@@ -377,6 +376,7 @@ public class ManejadorForm extends javax.swing.JFrame {
                     .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 299, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel2)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -405,7 +405,7 @@ public class ManejadorForm extends javax.swing.JFrame {
 		try {
 			String nombre = usuarioNameField.getText();
 			String correo = usuarioCorreoField.getText();
-			if (!(nombre.length() < 2 && nombre.length() > 15)) {
+			if (nombre.length() < 2 || nombre.length() > 15) {
 				usuarioEstadoLabel.setForeground(Color.RED);
 				usuarioRangoLabel.setForeground(Color.RED);
 				usuarioEstadoLabel.setText("Nombre de Usario fuera de Rango!");
@@ -414,12 +414,12 @@ public class ManejadorForm extends javax.swing.JFrame {
 				EVA3.addUsuario(nombre, correo);
 				usuarioEstadoLabel.setForeground(Color.GREEN);
 				usuarioEstadoLabel.setText("Usuario Registrado Exitosamente!");
+				updateRegistrarUsuario();
 			}
 		} catch (Exception e) {
 			usuarioEstadoLabel.setForeground(Color.RED);
 			usuarioEstadoLabel.setText("Error al Registrar Usuario...");
 		} finally {
-			updateRegistrarUsuario();
 			Timer timer = new Timer(2000, event -> {
 				usuarioEstadoLabel.setForeground(Color.BLACK);
 				usuarioEstadoLabel.setText("");
@@ -450,11 +450,13 @@ public class ManejadorForm extends javax.swing.JFrame {
 				mazoEstadoLabel.setForeground(Color.GREEN);
 				mazoEstadoLabel.setText("Carta agregada al Mazo Exitosamente!");
 			}
+			if (idUser == lastSelectedMazo) {
+				updateAgregarMazo();
+			}
 		} catch (Exception e) {
 			mazoEstadoLabel.setForeground(Color.RED);
 			mazoEstadoLabel.setText("No se puedo agregar la Carta al Mazo...");
 		} finally {
-			updateRegistrarUsuario();
 			Timer timer = new Timer(2000, event -> {
 				mazoEstadoLabel.setForeground(Color.BLACK);
 				mazoEstadoLabel.setText("");
@@ -462,7 +464,6 @@ public class ManejadorForm extends javax.swing.JFrame {
 			timer.setRepeats(false);
 			timer.start();
 		}
-		updateRegistrarCarta();
 	}//GEN-LAST:event_agregarCartaMazoButtonActionPerformed
 
 	private void mostrarMazoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mostrarMazoButtonActionPerformed
@@ -477,22 +478,26 @@ public class ManejadorForm extends javax.swing.JFrame {
 			String elemento = elementoBox.getSelectedItem().toString();
 			int atq = Integer.parseInt(ataqueField.getText());
 			int def = Integer.parseInt(defensaField.getText());
-			EVA3.addCarta(nombre, elemento, atq, def);
-			cartaEstadoLabel.setForeground(Color.GREEN);
-			cartaEstadoLabel.setText("Carta Registrada Exitosamente!");
+			if (elementoBox.getSelectedIndex() == 0) {
+				cartaEstadoLabel.setForeground(Color.RED);
+				cartaEstadoLabel.setText("Seleccione un Elemento...");
+			} else {
+				EVA3.addCarta(nombre, elemento, atq, def);
+				cartaEstadoLabel.setForeground(Color.GREEN);
+				cartaEstadoLabel.setText("Carta Registrada Exitosamente!");
+				updateRegistrarCarta();
+			}
 		} catch (Exception e) {
-			usuarioEstadoLabel.setForeground(Color.RED);
-			usuarioEstadoLabel.setText("Error al Registrar Carta...");
+			cartaEstadoLabel.setForeground(Color.RED);
+			cartaEstadoLabel.setText("Error al Registrar Carta...");
 		} finally {
-			updateRegistrarUsuario();
 			Timer timer = new Timer(2000, event -> {
-				usuarioEstadoLabel.setForeground(Color.BLACK);
-				usuarioEstadoLabel.setText("");
+				cartaEstadoLabel.setForeground(Color.BLACK);
+				cartaEstadoLabel.setText("");
 			});
 			timer.setRepeats(false);
 			timer.start();
 		}
-		updateRegistrarCarta();
 	}//GEN-LAST:event_registrarCartaButtonActionPerformed
 
 	public void updateRegistrarCarta() {
@@ -521,10 +526,17 @@ public class ManejadorForm extends javax.swing.JFrame {
 	}
 	public void updateAgregarMazo() {
 		EVA3.getMazoString(lastSelectedMazo);
-		String mazoListaText = idUsuarioMostrarMazoField.getText() + " - Mazo \n    N° - ID - Nombre - IDUsuario - IDCarta";
-		for (String text : EVA3.mazoLista) {
-			mazoListaText += "\n    " + text;
+		String mazoListaText = idUsuarioMostrarMazoField.getText() + " ID - Mazo" + "\n    N° - Nombre - Elemento - Ataque - Defensa";
+//		for (String text : EVA3.mazoLista) {
+//			mazoListaText += "\n    " + text;
+//		}
+		int count = 1;
+		ArrayList mazoUsuario = EVA3.getMazoData(lastSelectedMazo);
+		for (Object data : mazoUsuario) {
+			mazoListaText += "\n    " + count + " - " + EVA3.getCartaSingle((int)data);
+			count += 1;
 		}
+		
 		mazoListaTextView.setText(mazoListaText);
 	}
 	public void startUpdate(){

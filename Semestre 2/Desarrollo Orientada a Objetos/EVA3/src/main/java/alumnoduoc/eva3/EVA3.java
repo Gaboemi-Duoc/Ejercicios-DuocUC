@@ -50,9 +50,7 @@ public class EVA3 {
 			ResultSet rs = statement.executeQuery(sql);
 			
 			while (rs.next()) {                
-				//cartasObjectRS.add(new Object[]{rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5)});
 				cartasLista.add( rs.getString(1) + " - " + rs.getString(2) + " - " + rs.getString(3) + " - " + rs.getString(4) + " - " + rs.getString(5) );
-				// System.out.println(rs.getString(1) +" "+ rs.getString(2) + "-" +rs.getString(3) +" "+ rs.getString(4) + " " + rs.getString(5) +" "+ rs.getString(6));
 			}
 
 		} catch (SQLException e) {
@@ -68,6 +66,44 @@ public class EVA3 {
 			}
 		}
 	}
+	public static String getCartaSingle(int idCarta){
+
+		Connection connection = null;
+		
+		String cartaTexto = "";
+
+		try {
+			// Establecer la conexión
+			connection = DriverManager.getConnection(url, user, password);
+			System.out.println("Conexión exitosa a la base de datos!");
+
+			// Realizar una consulta para conseguir a
+			String sql = "SELECT * FROM cartas WHERE idcarta = " + idCarta;
+
+			PreparedStatement statement = connection.prepareStatement(sql);
+
+			ResultSet rs = statement.executeQuery(sql);
+			
+			while (rs.next()) {                
+				cartaTexto = rs.getString(2) + " - " + rs.getString(3) + " - " + rs.getString(4) + " - " + rs.getString(5);
+			}
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			// Cerrar la conexión
+			try {
+				if (connection != null) {
+					connection.close();
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			
+			return cartaTexto;
+		}
+	}
+
 	public static void getUsuarios(){
 
 		usuariosLista.clear();
@@ -87,9 +123,7 @@ public class EVA3 {
 			ResultSet rs = statement.executeQuery(sql);
 			
 			while (rs.next()) {                
-				//cartasObjectRS.add(new Object[]{rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5)});
 				usuariosLista.add( rs.getString(1) + " - " + rs.getString(2) + " - " + rs.getString(3) );
-				// System.out.println(rs.getString(1) +" "+ rs.getString(2) + "-" +rs.getString(3) +" "+ rs.getString(4) + " " + rs.getString(5) +" "+ rs.getString(6));
 			}
 
 		} catch (SQLException e) {
@@ -126,10 +160,8 @@ public class EVA3 {
 			
 			int count = 1;
 			while (rs.next()) {                
-				//cartasObjectRS.add(new Object[]{rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5)});
 				mazoLista.add( count + " - " + rs.getString(2) + " - " + rs.getString(3) + " - " + rs.getString(4));
 				count += 1;
-				// System.out.println(rs.getString(1) +" "+ rs.getString(2) + "-" +rs.getString(3) +" "+ rs.getString(4) + " " + rs.getString(5) +" "+ rs.getString(6));
 			}
 
 		} catch (SQLException e) {
@@ -271,12 +303,12 @@ public class EVA3 {
 			System.out.println("Conexión exitosa a la base de datos!");
 
 			// Realizar una consulta para insertar un nuevo alumno
-			String sql = "INSERT INTO mazos ( id_usuario, id_carta) VALUES ( ?, ?)";
+			String sql = "INSERT INTO mazos (nombre, id_usuario, id_carta) VALUES (?, ?, ?)";
 
 			PreparedStatement statement = connection.prepareStatement(sql);
-			//statement.setString(1, nombre);			// nombre
-			statement.setInt(1, idUsuario);			// idUsuario
-			statement.setInt(2, idCarta);				// idCarta
+			statement.setString(1, nombre);			// nombre
+			statement.setInt(2, idUsuario);			// idUsuario
+			statement.setInt(3, idCarta);				// idCarta
 
 			// Ejecutar la inserción
 			int rowsInserted = statement.executeUpdate();

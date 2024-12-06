@@ -24,7 +24,7 @@ DROP TABLE IF EXISTS `mazos`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `mazos` (
   `idmazo` int NOT NULL AUTO_INCREMENT,
-  `nombre` int DEFAULT NULL,
+  `nombre` varchar(45) DEFAULT NULL,
   `id_usuario` int DEFAULT NULL,
   `id_carta` int DEFAULT NULL,
   PRIMARY KEY (`idmazo`),
