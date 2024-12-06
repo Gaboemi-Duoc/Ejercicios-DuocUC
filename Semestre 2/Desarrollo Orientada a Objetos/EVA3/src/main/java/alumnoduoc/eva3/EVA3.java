@@ -19,15 +19,13 @@ public class EVA3 {
 	public static String user = "root";  // Usuario de MySQL
 	public static String password = "Informatica.2024"; // Contraseña del usuario
 	 
-	public static ArrayList<Object[]> cartasObjectRS = new ArrayList<>();
-	public static ArrayList<Object[]> usuariosObjectRS = new ArrayList<>();
-	public static ArrayList<Object[]> mazoObjectRS = new ArrayList<>();
 	public static ArrayList<String> cartasLista = new ArrayList<>();
 	public static ArrayList<String> usuariosLista = new ArrayList<>();
 	public static ArrayList<String> mazoLista = new ArrayList<>();
 	
 	public static void main(String[] args) {
 		ManejadorForm vista = new ManejadorForm();
+		vista.startUpdate();
 		vista.setVisible(true);
 	}
 	
@@ -107,7 +105,7 @@ public class EVA3 {
 			}
 		}
 	}
-	public static void getMazo(int idUsuario){
+	public static void getMazoString(int idUsuario){
 
 		mazoLista.clear();
 
@@ -119,16 +117,18 @@ public class EVA3 {
 			System.out.println("Conexión exitosa a la base de datos!");
 
 			// Realizar una consulta para conseguir a
-			String sql = "SELECT * FROM cartas WHERE ? IN (SELECT id_usuario FROM mazos WHERE mazos.id_carta = cartas.idcarta)";
+			String sql = "SELECT * FROM mazos WHERE id_usuario = " + idUsuario;
 
 			PreparedStatement statement = connection.prepareStatement(sql);
-			statement.setInt(1, idUsuario);			// idUsuario
+			//statement.setInt(1, idUsuario);			// idUsuario
 
 			ResultSet rs = statement.executeQuery(sql);
 			
+			int count = 1;
 			while (rs.next()) {                
 				//cartasObjectRS.add(new Object[]{rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5)});
-				mazoLista.add( rs.getString(1) + " - " + rs.getString(2) + " - " + rs.getString(3) );
+				mazoLista.add( count + " - " + rs.getString(2) + " - " + rs.getString(3) + " - " + rs.getString(4));
+				count += 1;
 				// System.out.println(rs.getString(1) +" "+ rs.getString(2) + "-" +rs.getString(3) +" "+ rs.getString(4) + " " + rs.getString(5) +" "+ rs.getString(6));
 			}
 
@@ -143,6 +143,46 @@ public class EVA3 {
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
+		}
+	}
+	public static ArrayList getMazoData(int idUsuario){
+
+		mazoLista.clear();
+
+		Connection connection = null;
+		
+		ArrayList<Integer> dataMazo = new ArrayList<>();
+
+		try {
+			// Establecer la conexión
+			connection = DriverManager.getConnection(url, user, password);
+			System.out.println("Conexión exitosa a la base de datos!");
+
+			// Realizar una consulta para conseguir a
+			String sql = "SELECT id_carta FROM mazos WHERE id_usuario = " + idUsuario;
+
+			PreparedStatement statement = connection.prepareStatement(sql);
+			//statement.setInt(1, idUsuario);			// idUsuario
+
+			ResultSet rs = statement.executeQuery(sql);
+			
+			while (rs.next()) {                
+				int data = rs.getInt(1);
+				dataMazo.add( data );
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			// Cerrar la conexión
+			try {
+				if (connection != null) {
+					connection.close();
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			
+			return dataMazo;
 		}
 	}
 	
@@ -185,7 +225,7 @@ public class EVA3 {
 			}
 		}
 	}
-	public static void addUsuario(String nombre, String correo){
+	public static void addUsuario(String nombre, String email){
 
 		Connection connection = null;
 
@@ -195,11 +235,11 @@ public class EVA3 {
 			System.out.println("Conexión exitosa a la base de datos!");
 
 			// Realizar una consulta para insertar un nuevo alumno
-			String sql = "INSERT INTO cartas (nombre, correo) VALUES (?, ?)";
+			String sql = "INSERT INTO usuarios (nombre, email) VALUES (?, ?)";
 
 			PreparedStatement statement = connection.prepareStatement(sql);
 			statement.setString(1, nombre);			// nombre
-			statement.setString(2, correo);		// correo
+			statement.setString(2, email);		// correo
 
 			// Ejecutar la inserción
 			int rowsInserted = statement.executeUpdate();
@@ -221,7 +261,7 @@ public class EVA3 {
 			}
 		}
 	}
-	public static void addMazo(int idUsuario, int idCarta){
+	public static void addMazo(String nombre, int idUsuario, int idCarta){
 
 		Connection connection = null;
 
@@ -231,11 +271,12 @@ public class EVA3 {
 			System.out.println("Conexión exitosa a la base de datos!");
 
 			// Realizar una consulta para insertar un nuevo alumno
-			String sql = "INSERT INTO mazos (idUsuario, idCarta) VALUES (?, ?)";
+			String sql = "INSERT INTO mazos ( id_usuario, id_carta) VALUES ( ?, ?)";
 
 			PreparedStatement statement = connection.prepareStatement(sql);
+			//statement.setString(1, nombre);			// nombre
 			statement.setInt(1, idUsuario);			// idUsuario
-			statement.setInt(2, idCarta);			// idCarta
+			statement.setInt(2, idCarta);				// idCarta
 
 			// Ejecutar la inserción
 			int rowsInserted = statement.executeUpdate();
