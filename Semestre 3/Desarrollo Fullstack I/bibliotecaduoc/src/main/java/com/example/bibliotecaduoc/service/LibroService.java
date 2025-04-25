@@ -29,7 +29,18 @@ public class LibroService {
         return libroRepository.actualizar(libro);
     }
 
-    public String deleteLibro(Libro libro) {
+    public String deleteLibro(int id) {
+        libroRepository.eliminar(id);
         return "producto eliminado";
+    }
+
+    // LA ACCION LA HACE EL SERVICIO
+    public int totalLibrosV1() {
+        return libroRepository.obtenerLibros().size();
+    }
+
+    // LA ACCION LA HACE EL MODELO
+    public int totalLibrosV2() {
+        return libroRepository.totalLibros();
     }
 }
