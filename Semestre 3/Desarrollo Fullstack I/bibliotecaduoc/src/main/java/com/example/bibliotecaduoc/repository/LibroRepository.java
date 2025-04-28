@@ -82,10 +82,14 @@ public class LibroRepository {
 
 	// Elimina el libro mediante su id
 	public void eliminar(int id) {
-		Libro libro = buscarPorId(id);
-		if (libro != null) {
-			listaLibros.remove(libro);
-		}
+		// Alternativa 1
+		// Libro libro = buscarPorId(id);
+		// if (libro != null) {
+		// 	listaLibros.remove(libro);
+		// }
+
+		// Alternativa 4
+		listaLibros.removeIf(x -> x.getId() == id);
 	}
 
 	// Retorna la cantidad de libros en inventario
