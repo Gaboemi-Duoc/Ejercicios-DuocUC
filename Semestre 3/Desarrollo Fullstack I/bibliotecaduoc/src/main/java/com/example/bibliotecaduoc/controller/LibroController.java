@@ -8,7 +8,7 @@ import com.example.bibliotecaduoc.service.LibroService;
 
 import java.util.List;
 
-
+//url: localhost:8080/
 @RestController
 @RequestMapping("/api/v1/libros")
 public class LibroController {
