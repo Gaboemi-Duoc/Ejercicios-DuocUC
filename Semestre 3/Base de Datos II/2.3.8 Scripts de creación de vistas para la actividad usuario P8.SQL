@@ -27,6 +27,9 @@ WHERE TO_CHAR(c.fecha_nacimiento,'MM')=TO_CHAR(SYSDATE,'MM')+1
 ORDER BY c.appaterno
 with read only;
 
+CREATE INDEX IDX_CLI_FECHA_NAC ON cliente(TO_CHAR(fecha_nacimiento,'MM'));
+DROP INDEX IDX_CLI_FECHA_NAC;
+
 --CASO  3
 CREATE OR REPLACE VIEW V_CRED_MAYOR_PROM  AS
 SELECT TO_CHAR(crc.fecha_otorga_cred,'MMYYYY') "MES TRANSACCIÓN",
@@ -39,12 +42,14 @@ SELECT TO_CHAR(crc.fecha_otorga_cred,'MMYYYY') "MES TRANSACCIÓN",
        ELSE ROUND(crc.monto_credito*0.07) END) "APORTE A LA SBIF"
 FROM credito_cliente crc JOIN credito c
 ON crc.cod_credito=c.cod_credito
-AND crc.monto_credito > (SELECT ROUND(AVG(monto_credito))
+WHERE crc.monto_credito > (SELECT ROUND(AVG(monto_credito))
                           FROM credito_cliente)
 GROUP BY TO_CHAR(crc.fecha_otorga_cred,'MMYYYY'), c.nombre_credito
 ORDER BY TO_CHAR(crc.fecha_otorga_cred,'MMYYYY'), c.nombre_credito
 WITH READ ONLY;
 
+CREATE INDEX IDX_CRED_CLIENTE ON credito_cliente(cod_credito, monto_credito);
+DROP INDEX IDX_CRED_CLIENTE;
 
 --CASO  4
 --Sentencia  Clientes_Prod_Inv_SII
@@ -60,7 +65,7 @@ AND EXTRACT(YEAR FROM pic.fecha_solic_prod)=EXTRACT(YEAR FROM SYSDATE)
 AND c.cod_tipo_contrato = 1
 ORDER BY c.appaterno;
 
-CREATE INDEX IDX_TESTING ON producto_inversion_cliente(EXTRACT(YEAR FROM fecha_solic_prod));
-DROP INDEX IDX_TESTING;
-CREATE INDEX IDX_TESTING2 ON CLIENTE(NRO_CLIENTE, COD_TIPO_CONTRATO);
-DROP INDEX IDX_TESTING2;
+CREATE INDEX IDX_PIC_FECHA_SOLI ON producto_inversion_cliente(EXTRACT(YEAR FROM fecha_solic_prod));
+DROP INDEX IDX_PIC_FECHA_SOLI;
+CREATE INDEX IDX_CLI_COD_TIP_CONT ON cliente(nro_cliente, cod_tipo_contrato);
+DROP INDEX IDX_CLI_COD_TIP_CONT;
