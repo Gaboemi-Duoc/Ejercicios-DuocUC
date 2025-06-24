@@ -1,0 +1,39 @@
+
+/*BEGIN
+    FOR EMP IN (SELECT * FROM EMPLEADO) LOOP
+        DBMS_OUTPUT.PUT_LINE('NOMBRE: ' || emp.pnombre_emp );
+    END LOOP;
+END;*/
+
+/*
+----------------------------
+NOMBRE COMPLETO:
+FECHA NACIMIENTO: XX/XX/XXXX
+NOMBRE COMUNA:
+----------------------------
+*/
+
+DECLARE
+    CURSOR CUR_EMPLEADO IS SELECT emp.pnombre_emp, emp.appaterno_emp, emp.fecha_nac, com.nombre_comuna FROM EMPLEADO emp NATURAL JOIN COMUNA com;
+    V_NOMBRE VARCHAR2(15);
+    V_APELLIDO VARCHAR2(15);
+    V_FECHA_NAC DATE;
+    V_COMUNA VARCHAR2(30);
+BEGIN
+    OPEN CUR_EMPLEADO;
+    LOOP
+        FETCH CUR_EMPLEADO INTO V_NOMBRE, V_APELLIDO, V_FECHA_NAC, V_COMUNA;
+        EXIT WHEN CUR_EMPLEADO%NOTFOUND;
+        DBMS_OUTPUT.PUT_LINE('NOMBRE COMPLETO: ' || V_NOMBRE || ' ' || V_APELLIDO);
+        DBMS_OUTPUT.PUT_LINE('FECHA NACIMIENTO: ' || V_FECHA_NAC);
+        DBMS_OUTPUT.PUT_LINE('NOMBRE COMUNA: ' || V_COMUNA);
+        DBMS_OUTPUT.PUT_LINE('----------------------------');
+    END LOOP;
+    CLOSE CUR_EMPLEADO;
+END;
+    
+DECLARE
+    
+BEGIN
+
+END;
