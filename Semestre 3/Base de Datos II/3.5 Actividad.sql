@@ -31,9 +31,3 @@ BEGIN
     END LOOP;
     CLOSE CUR_EMPLEADO;
 END;
-    
-DECLARE
-    
-BEGIN
-
-END;
