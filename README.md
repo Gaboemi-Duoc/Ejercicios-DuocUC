@@ -20,4 +20,10 @@
 - #### Desarrollo Fullstack I [DSY1103]
 - #### Base de Datos Aplicada II [BDY1102]
 
+### **4to Semestre**
+
+- #### Desarrollo Fullstack II [DSY1104]
+- #### Estadistica Descriptiva [MAT4141]
+- #### Taller de Base de Datos [BDY1103]
+
 Por Gaboemi<br><br>
