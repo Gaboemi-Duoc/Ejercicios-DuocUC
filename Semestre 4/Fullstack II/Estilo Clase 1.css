@@ -1,0 +1,40 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 32px;
+    padding-top: 64px;
+}
+
+#contenido {
+    background-color: blue;
+    padding-bottom: 32px;
+    margin: 2%;
+}
+
+ul {
+    margin-left: 36px;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    margin: 4%;
+}
+
+a {
+    /* Forma 1 Centrar */
+    display: flex;
+    margin: 0 auto;
+
+    justify-content: center;
+    text-align: center;
+}
+a:link { color: aqua; }
+a:visited { color: blueviolet; }
+a:hover { color: azure; }
+a:active { color: black; }
