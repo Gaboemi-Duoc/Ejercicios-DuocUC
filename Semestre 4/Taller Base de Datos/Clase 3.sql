@@ -65,6 +65,26 @@ BEGIN
     END LOOP;
 END;
 
+-- Actividad 4
+DECLARE
+    CURSOR cur_employee_salary IS
+        SELECT
+            first_name || ' ' || last_name employee_name,
+            salary,
+            commission_pct
+        FROM employees;
+    v_comision NUMBER;
+BEGIN
+    FOR reg IN cur_employee_salary LOOP
+        v_comision := reg.salary + reg.salary * reg.commission_pct;
+        dbms_output.put_line('--------------------');
+        dbms_output.put_line('Nombre Empleado: ' || reg. employee_name);
+        dbms_output.put_line('Salario: ' || reg. salary);
+        IF reg.commission_pct IS NOT NULL THEN
+            dbms_output.put_line('Salario con Comision: ' || v_comision);
+        END IF;
+    END LOOP;
+END;
 
 
 -- Saved Procedure
