@@ -1,0 +1,25 @@
+.navbar {
+	overflow: hidden;
+	background-color: #132b50;
+}
+
+.navbar #titlepage {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 700;
+	font-size: xx-large;
+}
+
+.navbar #login {
+	float: right;
+	background-color: black;
+	color: white;
+}
+
+.navbar a {
+	display: flex;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
