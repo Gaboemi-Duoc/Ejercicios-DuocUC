@@ -1,54 +1,72 @@
-const app = document.getElementById('app'); // Get Div called 'app'
-const app2 = document.getElementById('app2'); // Get Div called 'app2'
-const root = ReactDOM.createRoot(app);
-const root2 = ReactDOM.createRoot(app2);
-
-function Header(props) {
-  return <div>
-			<ul>
-				<li>arg1: {props.arg1}</li>
-				<li>arg2: {props.arg2}</li>
-			</ul>
-  		</div>;
+function NavBar() {
+  return <h1>Hola mundo. Soy el componente NavBar</h1>;
 }
-
-function Producto(props) {
-	num_prods = props.likes
-	for (let i = 0; i < num_prods; i++) {
-		complist.push(<><Content proid={i} /></>)
-	}
+// function Content(props) {
+//   return <div>
+//     <h1 key={props.prodid}>Hola mundo. Soy el componente producto {props.prodid} </h1>
+//   </div>
+// }
+function Footer() {
+  return <h1>Hola mundo. Soy el componente Footer</h1>;
 }
  
-function HomePage() { // Ideally the format would be full of calls to functions...
-	const productos = [""]
-	const complist = [<><Content proid={1} /></>, <><Content proid={2} /></>]
-
-	const [likes, setLikes] = React.useState(0);
-	function handleClickUpvote() {
-		setLikes(likes + 1)
-		complist.push(<><Content proid={likes + 1} /></>)
-	}
-	function handleClickDownvote() {
-		setLikes(likes - 1)
-	}
-
-	return (
-		<div>
-			{/* Nesting the Header component */}
-			<Header arg1="Hola" arg2="Mundo"/>
-			<p>Or so they say...</p>
-			<p>There was a time where humanity was but a nomadic people, with stories transmitted mouth to mouth, ear to ear.</p>
-		
-			<a href="https://nextjs.org/learn/react-foundations/getting-started-with-react">Link Tutorial React NextJS</a>
-
-			<div>
-				<p>Reddit Points: {likes}</p>
-				<button onClick={handleClickUpvote}>Upvote</button>
-				<button onClick={handleClickDownvote}>Downvote</button>
-			</div>
-		</div>
-	);
+ 
+function Product(props){
+  const prodid = props.prodid
+  return <>
+    <h1>Hola mundo. Soy el componente producto {prodid} </h1>
+  </>
 }
+ 
+ 
+function Products(props){
+  const num_prods = props.likes
+ 
+ 
+  // Para cada producto, crear un componente Product que reciba el id del producto
+  // y retorne un tag html
+  const complist = []
+  for (let i = 0; i < num_prods; i++) {
+    complist.push(<Product key={i} prodid={i} />)
+  }
+  
+  return <div>
+    {complist}
+  </div>
+}
+ 
+function HomePage() {
+  const [count, setCount] = React.useState(0);
+  // const [saludo, setSaludo] = React.useState("Hola");
+ 
+ 
+  function addClick() {
+    setCount(count + 1);
+  }
+  function subtractClick() {
+    if (count > 0) {
+      setCount(count - 1);
+    }
+    else {
+      setCount(0);
+    }
+  }
+ 
+ 
+  return (
+    <div>
+      <NavBar />
+      <button onClick={subtractClick}> - </button>
+      <b> Mostrando {count} producto(s) </b>
+      <button onClick={addClick}> + </button>
+      {/* {complist} */}
+      <Products likes={count} />
+      <Footer />
+    </div>
+  );
+}
+ 
+ 
+const root = ReactDOM.createRoot(app);
 root.render(<HomePage />);
-//root2.render(<Header />);
-
+ 
