@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- Carpeta de imágenes privada de la app (no requiere permiso de almacenamiento) -->
+    <external-files-path
+        name="images"
+        path="Pictures/" />
+</paths>
