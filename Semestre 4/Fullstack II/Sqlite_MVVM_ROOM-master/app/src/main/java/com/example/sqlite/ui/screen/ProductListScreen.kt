@@ -101,7 +101,7 @@ private fun ProductItem(
             Column(Modifier.clickable { onEdit() }) {
                 Text(product.nombre, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
                 Text(product.tipo, style = MaterialTheme.typography.labelSmall)
-                Text("Precio: ${"%.2f".format(product.precio)} | Stock: ${product.stock}")
+                Text("Precio: $${"%.0f".format(product.precio)} | Stock: ${product.stock}")
                 Text("Id: ${product.id}", style = MaterialTheme.typography.bodySmall)
             }
             Row {
