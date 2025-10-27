@@ -1,3 +1,15 @@
+CREATE OR REPLACE PACKAGE pkg_pobla_tablas_clinica AS
+    -- Procedimiento principal que orquesta el poblamiento
+    PROCEDURE poblar_tablas_adicionales;
+
+    -- Procedimientos individuales para cada tabla
+    PROCEDURE poblar_medico_servicio_comunidad(p_min_atenciones NUMBER := 5);
+    PROCEDURE poblar_pago_moroso;
+    PROCEDURE poblar_info_medico_sii(p_anno NUMBER := NULL);
+
+END pkg_pobla_tablas_clinica;
+/
+
 CREATE OR REPLACE PACKAGE BODY pkg_pobla_tablas_clinica AS
     FUNCTION priv_calcular_dias_morosidad(p_fecha_venc DATE, p_fecha_pago DATE)
     RETURN NUMBER IS
@@ -52,6 +64,13 @@ CREATE OR REPLACE PACKAGE BODY pkg_pobla_tablas_clinica AS
         AND ROWNUM = 1;
 
         RETURN NVL(v_porcentaje, 0);
+    EXCEPTION
+        WHEN NO_DATA_FOUND THEN
+            DBMS_OUTPUT.PUT_LINE('NO_DATA_FOUND para atenciones: ' || p_atenciones);
+            RETURN 0;
+        WHEN OTHERS THEN
+            DBMS_OUTPUT.PUT_LINE('Error: ' || SQLERRM);
+            RETURN 0;
     END priv_obtener_porcentaje_asignacion;
 
     -- Función privada para calcular bono especial
