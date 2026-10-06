@@ -26,4 +26,8 @@
 - #### Estadistica Descriptiva [MAT4141]
 - #### Taller de Base de Datos [BDY1103]
 
+### **6to Semestre**
+
+- #### Desarrollo Cloud Native I [DSY1107]
+
 Por Gaboemi<br><br>

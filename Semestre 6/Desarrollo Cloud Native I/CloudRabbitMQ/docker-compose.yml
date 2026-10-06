@@ -1,0 +1,10 @@
+services:
+  rabbitmq:
+    image: rabbitmq:4.3.6-management
+    container_name: rabbitmq-server
+    ports:
+      - "5672:5672"     # AMQP (la app)
+      - "15672:15672"   # UI de administración
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
